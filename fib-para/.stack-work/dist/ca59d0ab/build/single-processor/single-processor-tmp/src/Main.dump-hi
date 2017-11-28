@@ -1,0 +1,192 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-28 06:21:49.9465913 UTC
+
+interface main@main:Main 8002
+  interface hash: 701c3364ddebe1fabd933e619c17ded2
+  ABI hash: 1c22fb82f9ee2e16b4cf1e08d1dcdbae
+  export-list hash: d833aec58c17e98760c3ec7757637a99
+  orphan hash: e06bc9df4d56515241d8a43c1b235679
+  flag hash: c15a9ab631e7700e3a21f33176960cb3
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.fib
+  Main.main
+  Main.parallelFib
+module dependencies:
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      abstract-par-0.3.3@abstract-par-0.3.3-FIXQeoD8JqS8Il9xkWRf07
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      monad-par-0.3.4.8@monad-par-0.3.4.8-4MpI1cnQuTR5IrG6dFwtI7
+                      monad-par-extras-0.3.3@monad-par-extras-0.3.3-5IzzcdedS5bLAPIhSP2Ku6
+                      time-1.6.0.1@time-1.6.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         monad-par-0.3.4.8@monad-par-0.3.4.8-4MpI1cnQuTR5IrG6dFwtI7:Control.Monad.Par.Scheds.Trace
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.Environment 438c0b0bc0f94461b9c946d062a7eab9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  base-4.9.1.0:Text.Read 3cc85705eeac93ec93da7f5edfd7bc15
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  monad-par-0.3.4.8@monad-par-0.3.4.8-4MpI1cnQuTR5IrG6dFwtI7:Control.Monad.Par fa0378d4acbeff6048bb53d1cd52d026
+import  -/  monad-par-0.3.4.8@monad-par-0.3.4.8-4MpI1cnQuTR5IrG6dFwtI7:Control.Monad.Par.Scheds.Trace c7a4b31be1bb2fd954a100b55448860c
+import  -/  monad-par-0.3.4.8@monad-par-0.3.4.8-4MpI1cnQuTR5IrG6dFwtI7:Control.Monad.Par.Scheds.TraceInternal e0fd7485a4241f440125016c54bef357
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock 1b83a2154228c909ffa9675f9a90ea8a
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock.POSIX 61428f31307889ffd40365cd5c4e9ca2
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock.UTCDiff f895196ac3d1c6e07ef9064e6ec843ef
+98c967e2025da509058c02c4dfe404fd
+  $sread :: GHC.Base.String -> GHC.Types.Int
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Base.String) ->
+                 case Text.Read.readEither
+                        @ GHC.Types.Int
+                        GHC.Read.$fReadInt
+                        s of wild {
+                   Data.Either.Left x
+                   -> GHC.Err.errorWithoutStackTrace
+                        @ 'GHC.Types.PtrRepLifted
+                        @ GHC.Types.Int
+                        x
+                   Data.Either.Right y -> y }) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+453dd1068cfa42d8db5736cbd94773f3
+  $wfib :: GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+13f189bdff358afecd2c290daef0f25d
+  $wparallelFib :: GHC.Prim.Int# -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case ww of ds {
+                   DEFAULT
+                   -> Control.Monad.Par.Scheds.TraceInternal.runPar
+                        @ GHC.Types.Int
+                        (let {
+                           a1 :: GHC.Types.Int
+                           = case Main.$wfib (GHC.Prim.-# ds 2#) of ww1 { DEFAULT ->
+                             GHC.Types.I# ww1 }
+                         } in
+                         let {
+                           a2 :: GHC.Types.Int
+                           = case Main.$wfib (GHC.Prim.-# ds 1#) of ww1 { DEFAULT ->
+                             GHC.Types.I# ww1 }
+                         } in
+                         (\ (c :: GHC.Types.Int
+                                  -> Control.Monad.Par.Scheds.TraceInternal.Trace) ->
+                          Control.Monad.Par.Scheds.TraceInternal.New
+                            @ GHC.Types.Int
+                            (Control.Monad.Par.Scheds.TraceInternal.Empty @ GHC.Types.Int)
+                            (\ (a3 :: Control.Monad.Par.Scheds.TraceInternal.IVar
+                                        GHC.Types.Int) ->
+                             Control.Monad.Par.Scheds.TraceInternal.Fork
+                               (case a2 of ds1 { GHC.Types.I# ipv ->
+                                Control.Monad.Par.Scheds.TraceInternal.Put
+                                  @ GHC.Types.Int
+                                  a3
+                                  ds1
+                                  Control.Monad.Par.Scheds.TraceInternal.Done })
+                               (Control.Monad.Par.Scheds.TraceInternal.New
+                                  @ GHC.Types.Int
+                                  (Control.Monad.Par.Scheds.TraceInternal.Empty @ GHC.Types.Int)
+                                  (\ (a4 :: Control.Monad.Par.Scheds.TraceInternal.IVar
+                                              GHC.Types.Int) ->
+                                   Control.Monad.Par.Scheds.TraceInternal.Fork
+                                     (case a1 of ds1 { GHC.Types.I# ipv ->
+                                      Control.Monad.Par.Scheds.TraceInternal.Put
+                                        @ GHC.Types.Int
+                                        a4
+                                        ds1
+                                        Control.Monad.Par.Scheds.TraceInternal.Done })
+                                     (Control.Monad.Par.Scheds.TraceInternal.Get
+                                        @ GHC.Types.Int
+                                        a3
+                                        (\ (a5 :: GHC.Types.Int) ->
+                                         Control.Monad.Par.Scheds.TraceInternal.Get
+                                           @ GHC.Types.Int
+                                           a4
+                                           (\ (a6 :: GHC.Types.Int) ->
+                                            c (case a5 of wild { GHC.Types.I# x ->
+                                               case a6 of wild1 { GHC.Types.I# y ->
+                                               GHC.Types.I# (GHC.Prim.+# x y) } }))))))))
+                           `cast`
+                         (Sym (Control.Monad.Par.Scheds.TraceInternal.N:Par[0]
+                                   <GHC.Types.Int>_R)))
+                   0# -> Main.parallelFib2
+                   1# -> Main.parallelFib1 }) -}
+1aa216553e300efe6c4d0e7e5ee72d54
+  fib :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Main.$wfib ww1 of ww2 { DEFAULT -> GHC.Types.I# ww2 } }) -}
+d9c0dee8a685c5ed422401aaa63f23bf
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+01d62c2c484918d4b5d94b688c90c90e
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+1033d79446b09fbb5ef88af3224e93f4
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+019091256df4dcf531f2175c8035df09
+  parallelFib :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S(S),1*U(1*U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Main.$wparallelFib ww1 }) -}
+1d3d0587545c8216ddde1e81e43153b0
+  parallelFib1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+27bceb085e17f48565267265c9565c4d
+  parallelFib2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+"SPEC/Main read @ Int" [ALWAYS] forall ($dRead :: GHC.Read.Read
+                                                    GHC.Types.Int)
+  Text.Read.read @ GHC.Types.Int $dRead = Main.$sread
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

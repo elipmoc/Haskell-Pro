@@ -13,8 +13,17 @@ build-type:          Simple
 cabal-version:       >=1.10
 extra-source-files:  README.md
 
-executable fib-para
+executable single-processor
   hs-source-dirs:      src
   main-is:             Main.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
+                      ,monad-par,time
+
+executable multi-processor
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  ghc-options:         -threaded "-with-rtsopts=-N2"
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                      ,monad-par,time
