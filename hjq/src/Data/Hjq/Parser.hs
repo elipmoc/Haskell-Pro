@@ -42,3 +42,13 @@ jqFilterParser = schar '.' >> (jqField <|> jqIndex <|> pure JqNil)
 
         jqIndex :: Parser JqFilter
         jqIndex = JqIndex <$> (schar '[' *> decimal <* schar ']') <*> jqFilter
+
+
+data JqQuery
+    = JqQueryObject [(Text,JqQuery)]
+    | JqQueryArray [JqQuery]
+    | JqQueryFilter JqFilter
+    deriving (Show,Read , Eq)
+
+parseJqQuery :: Text -> Either Text JqQuery
+parseJqQuery s =undefined

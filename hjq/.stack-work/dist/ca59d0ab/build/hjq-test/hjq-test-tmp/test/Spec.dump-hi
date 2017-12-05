@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-05 07:13:19.662097 UTC
+2017-12-05 12:48:35.6972143 UTC
 
 interface main@main:Main 8002
-  interface hash: 0d0b600a1f6a94bc3a3b61505a140f45
-  ABI hash: 0c32078ba1dbe857e27d548d5125ad6f
-  export-list hash: bcefd51af0e0005080705e14ffcda9b6
-  orphan hash: 81c1448d5c7c2fb283a05a447abeec96
+  interface hash: 4f78418a782f021b92788822f47ef636
+  ABI hash: bc374106587357d50bb4e440913461ca
+  export-list hash: da3b968f4c4bc195700c3b26fef0c63f
+  orphan hash: 645353301ea2cdb003e66cc8014fabca
   flag hash: 13db57ddb479d0258e99f007b904488e
   sig of: Nothing
   used TH splices: False
@@ -14,6 +14,7 @@ interface main@main:Main 8002
 exports:
   Main.jqFilterParserSpacesTest
   Main.jqFilterParserTest
+  Main.jqQueryParserTest
   Main.main
 module dependencies:
 package dependencies: HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI
@@ -66,7 +67,7 @@ import  -/  base-4.9.1.0:Data.Either 186ef9adf6b47e24f39efe9b2e18e352
 import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
-import  -/  hjq-0.1.0.0@hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2:Data.Hjq.Parser 2f7aba4163c3b1be664903ece3091619
+import  -/  hjq-0.1.0.0@hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2:Data.Hjq.Parser 50e9d5253715140327437264f00dffd4
 304e256159a879302f8064bb48bb511c
   $s$fEqEither ::
     GHC.Classes.Eq
@@ -85,6 +86,25 @@ import  -/  hjq-0.1.0.0@hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2:Data.Hjq.Parser 2f7ab
                      @ Data.Text.Internal.Text
                      @ Data.Hjq.Parser.JqFilter
                      Data.Hjq.Parser.$fEqJqFilter
+                     Data.Text.$fEqText) -}
+bb20946f46f5fde014391d04fcfc1dfc
+  $s$fEqEither1 ::
+    GHC.Classes.Eq
+      (Data.Either.Either
+         Data.Text.Internal.Text Data.Hjq.Parser.JqQuery)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Either.Either
+                       Data.Text.Internal.Text Data.Hjq.Parser.JqQuery)
+                  (Data.Either.$fEqEither_$c==
+                     @ Data.Text.Internal.Text
+                     @ Data.Hjq.Parser.JqQuery
+                     Data.Hjq.Parser.$fEqJqQuery
+                     Data.Text.$fEqText)
+                  (Data.Either.$fEqEither_$c/=
+                     @ Data.Text.Internal.Text
+                     @ Data.Hjq.Parser.JqQuery
+                     Data.Hjq.Parser.$fEqJqQuery
                      Data.Text.$fEqText) -}
 4b1af870b89438b8d00e6006a7a2bda9
   $s$fShowEither ::
@@ -106,6 +126,26 @@ import  -/  hjq-0.1.0.0@hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2:Data.Hjq.Parser 2f7ab
                      Data.Hjq.Parser.$fShowJqFilter
                      Data.Text.Show.$fShowText)
                   Main.$s$fShowEither_$s$fShowEither_$cshowList -}
+52af940430a6459cb265b4b6b28bf537
+  $s$fShowEither1 ::
+    GHC.Show.Show
+      (Data.Either.Either
+         Data.Text.Internal.Text Data.Hjq.Parser.JqQuery)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Either.Either
+                       Data.Text.Internal.Text Data.Hjq.Parser.JqQuery)
+                  (Data.Either.$fShowEither_$cshowsPrec
+                     @ Data.Text.Internal.Text
+                     @ Data.Hjq.Parser.JqQuery
+                     Data.Hjq.Parser.$fShowJqQuery
+                     Data.Text.Show.$fShowText)
+                  (Data.Either.$fShowEither_$cshow
+                     @ Data.Text.Internal.Text
+                     @ Data.Hjq.Parser.JqQuery
+                     Data.Hjq.Parser.$fShowJqQuery
+                     Data.Text.Show.$fShowText)
+                  Main.$s$fShowEither_$s$fShowEither_$cshowList1 -}
 3eccd6d15cea0aee2215ea2d477c0715
   $s$fShowEither_$s$fShowEither_$cshowList ::
     [Data.Either.Either
@@ -127,6 +167,27 @@ import  -/  hjq-0.1.0.0@hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2:Data.Hjq.Parser 2f7ab
                       Data.Either.$fShowEither1)
                    eta
                    eta1) -}
+69064f41b1b0b67c08edb89e65fb8702
+  $s$fShowEither_$s$fShowEither_$cshowList1 ::
+    [Data.Either.Either
+       Data.Text.Internal.Text Data.Hjq.Parser.JqQuery]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [Data.Either.Either
+                              Data.Text.Internal.Text Data.Hjq.Parser.JqQuery])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Data.Either.Either
+                        Data.Text.Internal.Text Data.Hjq.Parser.JqQuery)
+                   (Data.Either.$fShowEither_$cshowsPrec
+                      @ Data.Text.Internal.Text
+                      @ Data.Hjq.Parser.JqQuery
+                      Data.Hjq.Parser.$fShowJqQuery
+                      Data.Text.Show.$fShowText
+                      Data.Either.$fShowEither1)
+                   eta
+                   eta1) -}
 d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -139,12 +200,12 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-08ffac0a8e7611335d225fa4e59e938f
+9bb08693fe639f6f3f6eb5410de5f8a0
   jqFilterParserSpacesTest :: Test.HUnit.Base.Test
   {- Strictness: m2,
      Unfolding: (Test.HUnit.Base.TestList
                    Main.jqFilterParserSpacesTest1) -}
-996561fca0aaf04f19e36510beeb6c3a
+8bf71c3fb89ad6b80dd0acff51dd0ff2
   jqFilterParserSpacesTest1 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
@@ -179,7 +240,7 @@ a683b81dc1c07b37e2ba9d27ab9d32ff
 fed38d6f27638a04a9e067b4ca4c015f
   jqFilterParserSpacesTest15 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "fieldName"#) -}
-bbdea8d5899650dcfac2d0eea707545e
+ffd1d05fe126d9af5a9e285195a669ce
   jqFilterParserSpacesTest16 ::
     GHC.Base.String
     -> Data.Either.Either
@@ -196,32 +257,32 @@ bbdea8d5899650dcfac2d0eea707545e
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    Main.$s$fEqEither
                    Main.$s$fShowEither) -}
-822b00a7541992597ee4a4cf6b1b5979
+f62c4244db720725193d11217b10e85a
   jqFilterParserSpacesTest17 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
                    Main.jqFilterParserSpacesTest18) -}
-fe78b28bdcd50a9d03899a88205fe972
+b9a91507d82a2ac352a59face45080d2
   jqFilterParserSpacesTest18 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.~?=3
                    Test.HUnit.Base.~?=1
                    Main.jqFilterParserSpacesTest19) -}
-e77647e33df421f3d259815b517411da
+9d7cb64aa1e9f330908416d67a481a54
   jqFilterParserSpacesTest19 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.jqFilterParserSpacesTest27
                    Main.jqFilterParserSpacesTest20
                    GHC.Stack.Types.EmptyCallStack) -}
-3b2f3d7c9729e74e09d598ee9d79187d
+f39441da59fb134805cb9c68e2033be3
   jqFilterParserSpacesTest2 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
                    Main.jqFilterParserSpacesTest59
                    Main.jqFilterParserSpacesTest3) -}
-64d13d3b0cfe8824f48303d1eefc2d89
+75993eca5f9d4ff2ef931d308a1d2e60
   jqFilterParserSpacesTest20 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.jqFilterParserSpacesTest26
@@ -237,9 +298,9 @@ e77647e33df421f3d259815b517411da
 6763321ae04bba0adf6e79ae108db58c
   jqFilterParserSpacesTest22 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 44#) -}
-98636a01afc90c286808cac46192389f
+0a384c2b103a2c1d40090e1018c0d865
   jqFilterParserSpacesTest23 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 36#) -}
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 37#) -}
 3fa220b97438731e6ed0555621f466cc
   jqFilterParserSpacesTest24 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "test\\Spec.hs"#) -}
@@ -256,25 +317,25 @@ ef6499c4ee16043d4af9b343ec597bf6
   jqFilterParserSpacesTest28 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "jqFilterParser spaces test 5"#) -}
-cc65d8af80b3142f15979add3985efb1
+5e252c0d9fcc2d5e2ec152ebb2726cc0
   jqFilterParserSpacesTest29 :: Test.HUnit.Base.Test
   {- Strictness: m3,
      Unfolding: (Test.HUnit.Base.TestLabel
                    Main.jqFilterParserSpacesTest44
                    Main.jqFilterParserSpacesTest30) -}
-8a9b485ca87e3074262192733c3ce455
+b74826ed51e2f5d74d9921323c31ab4a
   jqFilterParserSpacesTest3 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
                    Main.jqFilterParserSpacesTest45
                    Main.jqFilterParserSpacesTest4) -}
-3f50084091b1e84b18da6fe89b3f97a7
+d4e417be9a0a530442e8497d60e9ac80
   jqFilterParserSpacesTest30 :: Test.HUnit.Base.Test
   {- Strictness: m1,
      Unfolding: (Test.HUnit.Base.TestCase
                    Main.jqFilterParserSpacesTest31) -}
-cccf1efe809ec76dc155fdb0a6c22bfa
+7b461c130fe6f0d5a201ac66901e4073
   jqFilterParserSpacesTest31 :: Test.HUnit.Lang.Assertion
   {- Unfolding: (Main.jqFilterParserSpacesTest37
                    (GHC.Types.[] @ GHC.Types.Char)
@@ -306,7 +367,7 @@ c0d813271885426f13e1e7a84b5862fc
   {- Unfolding: (Data.Hjq.Parser.JqField
                    Main.jqFilterParserSpacesTest15
                    Data.Hjq.Parser.JqNil) -}
-d592b9a41fce6a6940eda3ff25551d2d
+9b2a9cbf52370614d67647cbf0a0686a
   jqFilterParserSpacesTest37 ::
     GHC.Base.String
     -> Data.Either.Either
@@ -323,32 +384,32 @@ d592b9a41fce6a6940eda3ff25551d2d
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    Main.$s$fEqEither
                    Main.$s$fShowEither) -}
-3186416db01fd210c7f45bdd96fbe93a
+95b91b3b6d7c4662cc3362a2a0e75f5c
   jqFilterParserSpacesTest38 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
                    Main.jqFilterParserSpacesTest39) -}
-0205297d3e7f8f773af32a3afb223f1a
+c144f521f9e78ede446f44b06c704cf2
   jqFilterParserSpacesTest39 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.~?=3
                    Test.HUnit.Base.~?=1
                    Main.jqFilterParserSpacesTest40) -}
-93dd4515b09e3d3cbb00f4a1df5d6573
+48e5953b463e1a96fc9bbbe27f0f0daa
   jqFilterParserSpacesTest4 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
                    Main.jqFilterParserSpacesTest29
                    Main.jqFilterParserSpacesTest5) -}
-c9997df064c51c5ecd55534f0e079b08
+981ccafa31c10453659126225250c6af
   jqFilterParserSpacesTest40 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.jqFilterParserSpacesTest27
                    Main.jqFilterParserSpacesTest41
                    GHC.Stack.Types.EmptyCallStack) -}
-cac54edcdf46c0ff821397d99835bdb3
+fccf3d970bae9a85d56509c2a77fea1c
   jqFilterParserSpacesTest41 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.jqFilterParserSpacesTest26
@@ -361,25 +422,25 @@ cac54edcdf46c0ff821397d99835bdb3
 21c2aa663e35633fea5db7677d6a2776
   jqFilterParserSpacesTest42 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 132#) -}
-38297174794af4ceb08385e387050b1e
+0d5a87e1f08382e7a8be38c38a8edc8f
   jqFilterParserSpacesTest43 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 35#) -}
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 36#) -}
 939deba3678bb8f92d5b3186c0c29c97
   jqFilterParserSpacesTest44 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "jqFilterParser spaces test 4"#) -}
-e653ecb1c347e8273d5a10ede3aa12db
+573b6c6393c436276dfbcd5b8076072c
   jqFilterParserSpacesTest45 :: Test.HUnit.Base.Test
   {- Strictness: m3,
      Unfolding: (Test.HUnit.Base.TestLabel
                    Main.jqFilterParserSpacesTest58
                    Main.jqFilterParserSpacesTest46) -}
-295e84f4d2a3f0009370e807acdec0cc
+8a647a702c75a1a9e7a8a0136fff321b
   jqFilterParserSpacesTest46 :: Test.HUnit.Base.Test
   {- Strictness: m1,
      Unfolding: (Test.HUnit.Base.TestCase
                    Main.jqFilterParserSpacesTest47) -}
-524082b32ff9bb23148246c277107fb9
+49f61e73f845302601da53d4af3da44b
   jqFilterParserSpacesTest47 :: Test.HUnit.Lang.Assertion
   {- Unfolding: (Main.jqFilterParserSpacesTest51
                    (GHC.Types.[] @ GHC.Types.Char)
@@ -393,7 +454,7 @@ e653ecb1c347e8273d5a10ede3aa12db
 ae990827e8e65cd0b94538bf18ace227
   jqFilterParserSpacesTest49 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# " . fieldName "#) -}
-a844f07cf63db2642ae8844a4c9283da
+7bd3d11df2d74ec48cbdd7fb28e02fe2
   jqFilterParserSpacesTest5 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
@@ -407,7 +468,7 @@ bcd8e8cdf692961fae378f3394916cb0
                    @ Data.Text.Internal.Text
                    @ Data.Hjq.Parser.JqFilter
                    Main.jqFilterParserSpacesTest36) -}
-ca1e18499db77439e831513f7539f230
+dd4fac981d9c0ba5fca903cddcbb714a
   jqFilterParserSpacesTest51 ::
     GHC.Base.String
     -> Data.Either.Either
@@ -424,25 +485,25 @@ ca1e18499db77439e831513f7539f230
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    Main.$s$fEqEither
                    Main.$s$fShowEither) -}
-1ef892fb29b6429284da787511de606f
+e57c77a1b89f4e15a8de7bbe97ec7c36
   jqFilterParserSpacesTest52 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
                    Main.jqFilterParserSpacesTest53) -}
-f77829413f8bf7c20e2f7d81bb46611a
+6f1a62b99e4618570b91582ace92bd38
   jqFilterParserSpacesTest53 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.~?=3
                    Test.HUnit.Base.~?=1
                    Main.jqFilterParserSpacesTest54) -}
-6d7877773f298e03f5b867b9e25ced9e
+a428c425e28ff291e4670348688f672f
   jqFilterParserSpacesTest54 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.jqFilterParserSpacesTest27
                    Main.jqFilterParserSpacesTest55
                    GHC.Stack.Types.EmptyCallStack) -}
-b7740e6344c00894ea7bdf2da42e1d32
+e5b45c0e9f7a2f9c45e17079f76e252d
   jqFilterParserSpacesTest55 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.jqFilterParserSpacesTest26
@@ -455,31 +516,31 @@ b7740e6344c00894ea7bdf2da42e1d32
 a3fcea2b50ccf94af02cef5b95cbc628
   jqFilterParserSpacesTest56 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 112#) -}
-c81573024e44e1b66a890625432d8480
+ac7c88596cd979fa18c338d554df07fe
   jqFilterParserSpacesTest57 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 34#) -}
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 35#) -}
 20aadfca39f00865d4526f73401d8be6
   jqFilterParserSpacesTest58 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "jqFilterParser spaces test 3"#) -}
-f7384e60b7f289a9d7d52666ed39fb77
+c7137517a6ec409904dfcbca62cffd0a
   jqFilterParserSpacesTest59 :: Test.HUnit.Base.Test
   {- Strictness: m3,
      Unfolding: (Test.HUnit.Base.TestLabel
                    Main.jqFilterParserSpacesTest72
                    Main.jqFilterParserSpacesTest60) -}
-c723a743c8dcfe0b3650cb183ef51958
+4de45e217f48294a3e55b1b12445ddce
   jqFilterParserSpacesTest6 :: Test.HUnit.Base.Test
   {- Strictness: m3,
      Unfolding: (Test.HUnit.Base.TestLabel
                    Main.jqFilterParserSpacesTest28
                    Main.jqFilterParserSpacesTest7) -}
-106fbfdcc23735ecbaa6200234712af7
+5190698ce4ed55e5396ea499545f9897
   jqFilterParserSpacesTest60 :: Test.HUnit.Base.Test
   {- Strictness: m1,
      Unfolding: (Test.HUnit.Base.TestCase
                    Main.jqFilterParserSpacesTest61) -}
-06fd52ca4d75274b20bcfcfc0b6b84ca
+cd6b2265d7d644d9e53e81b289c14efa
   jqFilterParserSpacesTest61 :: Test.HUnit.Lang.Assertion
   {- Unfolding: (Main.jqFilterParserSpacesTest65
                    (GHC.Types.[] @ GHC.Types.Char)
@@ -501,7 +562,7 @@ c723a743c8dcfe0b3650cb183ef51958
                    @ Data.Text.Internal.Text
                    @ Data.Hjq.Parser.JqFilter
                    Main.jqFilterParserSpacesTest13) -}
-f4f4ec196429be4bff2935b452c2417b
+8b2797568cd7699e73405202c37a3b9c
   jqFilterParserSpacesTest65 ::
     GHC.Base.String
     -> Data.Either.Either
@@ -518,25 +579,25 @@ f4f4ec196429be4bff2935b452c2417b
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    Main.$s$fEqEither
                    Main.$s$fShowEither) -}
-fa35b68797c87ac82bd16e9bd656dd16
+d71151cb51051606772c56803732ab98
   jqFilterParserSpacesTest66 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
                    Main.jqFilterParserSpacesTest67) -}
-c4f28701850114eb86e8590992c9b97a
+8b9fcf2603b3b8f2e0017b26772234ca
   jqFilterParserSpacesTest67 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.~?=3
                    Test.HUnit.Base.~?=1
                    Main.jqFilterParserSpacesTest68) -}
-a716d5d3828ff925111ff249f96c6dcc
+e38403bb372782abaf61985801718e3d
   jqFilterParserSpacesTest68 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.jqFilterParserSpacesTest27
                    Main.jqFilterParserSpacesTest69
                    GHC.Stack.Types.EmptyCallStack) -}
-e047111b438f3f5b5de7c893ac7a341b
+1227ff6c7e36a86c631e8d160d5fee3b
   jqFilterParserSpacesTest69 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.jqFilterParserSpacesTest26
@@ -546,7 +607,7 @@ e047111b438f3f5b5de7c893ac7a341b
                    Main.jqFilterParserSpacesTest22
                    Main.jqFilterParserSpacesTest71
                    Main.jqFilterParserSpacesTest70) -}
-fd69ef48c59ec9733e4e14ba79658b39
+3a5b14f0703fc1fa2fea6e1493046d7d
   jqFilterParserSpacesTest7 :: Test.HUnit.Base.Test
   {- Strictness: m1,
      Unfolding: (Test.HUnit.Base.TestCase
@@ -554,25 +615,25 @@ fd69ef48c59ec9733e4e14ba79658b39
 0e8ef1c7f330887a5a3784b3c5ed2b32
   jqFilterParserSpacesTest70 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 98#) -}
-2fc507cbcb05591c10a311a512f5081d
+9e3a7d20d61bdb98470e662c561df928
   jqFilterParserSpacesTest71 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 33#) -}
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 34#) -}
 bcd5297dbf94f7dd355c7d53f96e9dbe
   jqFilterParserSpacesTest72 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "jqFilterParser spaces test 2"#) -}
-5daabcb6e447235da38ad634488e8df6
+931ca0c2557617f10cd99a57569e00a7
   jqFilterParserSpacesTest73 :: Test.HUnit.Base.Test
   {- Strictness: m3,
      Unfolding: (Test.HUnit.Base.TestLabel
                    Main.jqFilterParserSpacesTest87
                    Main.jqFilterParserSpacesTest74) -}
-0ef8bf3230eb7999af24eb595bbcef43
+94295dee7da7d3eace34511372cac92e
   jqFilterParserSpacesTest74 :: Test.HUnit.Base.Test
   {- Strictness: m1,
      Unfolding: (Test.HUnit.Base.TestCase
                    Main.jqFilterParserSpacesTest75) -}
-7ae06b8c22d950b3774b3e32de0e13eb
+069d055db963c01a96d675ae21bfd235
   jqFilterParserSpacesTest75 :: Test.HUnit.Lang.Assertion
   {- Unfolding: (Main.jqFilterParserSpacesTest79
                    (GHC.Types.[] @ GHC.Types.Char)
@@ -594,7 +655,7 @@ de57f45798842cb29c8a3912bcb66cbe
                    @ Data.Text.Internal.Text
                    @ Data.Hjq.Parser.JqFilter
                    Data.Hjq.Parser.JqNil) -}
-cc2387549a0a4582afec056c3ffbbb40
+0b9dd3171a90b0c37ebd30493c772f2a
   jqFilterParserSpacesTest79 ::
     GHC.Base.String
     -> Data.Either.Either
@@ -611,31 +672,31 @@ cc2387549a0a4582afec056c3ffbbb40
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    Main.$s$fEqEither
                    Main.$s$fShowEither) -}
-6e5594d419688dcd1bf60865352c527f
+e772006bae01769ad4c756b0eb7c9fcf
   jqFilterParserSpacesTest8 :: Test.HUnit.Lang.Assertion
   {- Unfolding: (Main.jqFilterParserSpacesTest16
                    (GHC.Types.[] @ GHC.Types.Char)
                    Main.jqFilterParserSpacesTest11
                    Main.jqFilterParserSpacesTest9) -}
-5c274aaf032cc36e117b3a79359951ca
+2f0cf32d004a815cbc8328f412a7edd7
   jqFilterParserSpacesTest80 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
                    Main.jqFilterParserSpacesTest81) -}
-0aaf6a3092011524670c218c56076e64
+76912c0420d8f06c4686bfdb9403fb58
   jqFilterParserSpacesTest81 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.~?=3
                    Test.HUnit.Base.~?=1
                    Main.jqFilterParserSpacesTest82) -}
-143a42c6e9a0560220f33b4fd9136833
+9e16024d0039ecdac84bcfd4d4a12a09
   jqFilterParserSpacesTest82 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.jqFilterParserSpacesTest27
                    Main.jqFilterParserSpacesTest83
                    GHC.Stack.Types.EmptyCallStack) -}
-977fb7df5867e28b3c4b4f1a49b5bfa2
+0b3b7c1eee4a02353351d9f7c30963a3
   jqFilterParserSpacesTest83 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.jqFilterParserSpacesTest26
@@ -651,9 +712,9 @@ d10a8ae36d7f7ccefb5d390da6233afd
 422bfee7c754a9555d89c2b443b4462d
   jqFilterParserSpacesTest85 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 43#) -}
-377a5752d7519f5105ffcf6d46f68533
+658c6d0742e62153d92e78a1a1797d30
   jqFilterParserSpacesTest86 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 32#) -}
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 33#) -}
 ed9ca6939fd23645556cec8b0091ede5
   jqFilterParserSpacesTest87 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
@@ -663,21 +724,21 @@ ed9ca6939fd23645556cec8b0091ede5
     Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
   {- Unfolding: (Data.Hjq.Parser.parserJqFilter
                    Main.jqFilterParserSpacesTest10) -}
-63b920858d5f2af53d984b7113f82123
+49384922b2770a743b7bf5f524463d8b
   jqFilterParserTest :: Test.HUnit.Base.Test
   {- Strictness: m2,
      Unfolding: (Test.HUnit.Base.TestList Main.jqFilterParserTest1) -}
-36ad09fde57666620a527967764e8570
+19a9339c7255a56da06b5ae0ce7ce120
   jqFilterParserTest1 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
-                   Main.jqFilterParserTest59
+                   Main.jqFilterParserTest58
                    Main.jqFilterParserTest2) -}
 356f04e123a75af13355d94eaca25e94
   jqFilterParserTest10 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# ".fieldName[0]"#) -}
-18dbc7a058758a9a22941d412cbc8fe0
+eeb27bd90de6d46afb23c4de27249fc9
   jqFilterParserTest11 ::
     GHC.Base.String
     -> Data.Either.Either
@@ -694,80 +755,77 @@ ed9ca6939fd23645556cec8b0091ede5
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    Main.$s$fEqEither
                    Main.$s$fShowEither) -}
-1e7681f906e68ae9fdee39aec0f09ee9
+23e2ce9b513684e71d4286eaa436b5db
   jqFilterParserTest12 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
                    Main.jqFilterParserTest13) -}
-51e1696a96cf15874cf80534590c9aa2
+c01bf73e6fb217d920b7cee5055d61fb
   jqFilterParserTest13 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.~?=3
                    Test.HUnit.Base.~?=1
                    Main.jqFilterParserTest14) -}
-cb59e30801fbfce89b1009bf3a88a8f0
+c880064b32cff7e510a1cb7e788c80a3
   jqFilterParserTest14 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.jqFilterParserSpacesTest27
                    Main.jqFilterParserTest15
                    GHC.Stack.Types.EmptyCallStack) -}
-6a0583c9a246d6ccebcca55a78fc8654
+0079746f6da0894b95b54c8b6069c68f
   jqFilterParserTest15 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.jqFilterParserSpacesTest26
                    Main.jqFilterParserSpacesTest25
                    Main.jqFilterParserSpacesTest24
-                   Main.jqFilterParserTest18
                    Main.jqFilterParserTest17
-                   Main.jqFilterParserTest18
+                   Main.jqFilterParserSpacesTest23
+                   Main.jqFilterParserTest17
                    Main.jqFilterParserTest16) -}
 3d755a56ef0facc04830e97aca56eb9d
   jqFilterParserTest16 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 117#) -}
-9f86046105151f38a2a33d119b363015
+a47c7c2a1956184206e4dac60e0ef508
   jqFilterParserTest17 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 37#) -}
-a1f2575aefe93b8ad63b6a75f0613e57
-  jqFilterParserTest18 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 25#) -}
-766f3b5d63497c4fe22a21fe40e67711
-  jqFilterParserTest19 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 26#) -}
+12eb599870214966b243f79df045936b
+  jqFilterParserTest18 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "jqFilterParser test 5"#) -}
-905d6edcae89e3d15f7647406caeb628
+3f7d27eb3ce858598d9ff45bd31fe7d9
+  jqFilterParserTest19 :: Test.HUnit.Base.Test
+  {- Strictness: m3,
+     Unfolding: (Test.HUnit.Base.TestLabel
+                   Main.jqFilterParserTest31
+                   Main.jqFilterParserTest20) -}
+5761d8d32f2b2a8ba679fe6d27e55599
   jqFilterParserTest2 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
-                   Main.jqFilterParserTest46
+                   Main.jqFilterParserTest45
                    Main.jqFilterParserTest3) -}
-1c9c00d19af1b47decfbfd56e2ec9ac9
+61f1791b294f3a8f40e022d8f17a2e12
   jqFilterParserTest20 :: Test.HUnit.Base.Test
-  {- Strictness: m3,
-     Unfolding: (Test.HUnit.Base.TestLabel
-                   Main.jqFilterParserTest32
-                   Main.jqFilterParserTest21) -}
-4f248c816a1f632de6918b3274650d12
-  jqFilterParserTest21 :: Test.HUnit.Base.Test
   {- Strictness: m1,
-     Unfolding: (Test.HUnit.Base.TestCase Main.jqFilterParserTest22) -}
-68bd897bf3bae741c8cae0f2e45d5170
-  jqFilterParserTest22 :: Test.HUnit.Lang.Assertion
-  {- Unfolding: (Main.jqFilterParserTest25
+     Unfolding: (Test.HUnit.Base.TestCase Main.jqFilterParserTest21) -}
+cd12bbef11210e812dbc995cd19355d1
+  jqFilterParserTest21 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.jqFilterParserTest24
                    (GHC.Types.[] @ GHC.Types.Char)
                    Main.jqFilterParserSpacesTest34
-                   Main.jqFilterParserTest23) -}
-497bff79d21040feeda11da67a9c074d
-  jqFilterParserTest23 ::
+                   Main.jqFilterParserTest22) -}
+b5907369d4f5d8d045b94ea09357fb7f
+  jqFilterParserTest22 ::
     Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
   {- Unfolding: (Data.Hjq.Parser.parserJqFilter
-                   Main.jqFilterParserTest24) -}
-4c7ac58c55f4efdb7c52094f7ce128f5
-  jqFilterParserTest24 :: Data.Text.Internal.Text
+                   Main.jqFilterParserTest23) -}
+a4d6a7246b43e477abe6f23aa72206f0
+  jqFilterParserTest23 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# ".[0].fieldName"#) -}
-64dd82e8c5d4dcf48d5499d7e8fac5e5
-  jqFilterParserTest25 ::
+41c3028a1ba35004dd73a304a1de5a9c
+  jqFilterParserTest24 ::
     GHC.Base.String
     -> Data.Either.Either
          Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
@@ -777,83 +835,83 @@ a1f2575aefe93b8ad63b6a75f0613e57
   {- Unfolding: (Test.HUnit.Lang.assertEqual
                    @ (Data.Either.Either
                         Data.Text.Internal.Text Data.Hjq.Parser.JqFilter)
-                   Main.jqFilterParserTest26
+                   Main.jqFilterParserTest25
                      `cast`
                    (Sym (GHC.Classes.N:IP[0]
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    Main.$s$fEqEither
                    Main.$s$fShowEither) -}
-6cec5b528ad7b0bc3ac2f9d2591ae279
-  jqFilterParserTest26 :: GHC.Stack.Types.CallStack
+5332791071cf9ca255cdc5d8e10dcdc3
+  jqFilterParserTest25 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
-                   Main.jqFilterParserTest27) -}
-25b72bc7f52370c2a3ef76a00aeac64f
-  jqFilterParserTest27 :: GHC.Stack.Types.CallStack
+                   Main.jqFilterParserTest26) -}
+199b64428131cba76b15e4a45205615a
+  jqFilterParserTest26 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.~?=3
                    Test.HUnit.Base.~?=1
-                   Main.jqFilterParserTest28) -}
-1096d3a46431fc6f40975e08ba44799c
-  jqFilterParserTest28 :: GHC.Stack.Types.CallStack
+                   Main.jqFilterParserTest27) -}
+f239f233c5454b937b69757817068c45
+  jqFilterParserTest27 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.jqFilterParserSpacesTest27
-                   Main.jqFilterParserTest29
+                   Main.jqFilterParserTest28
                    GHC.Stack.Types.EmptyCallStack) -}
-d70c5bcb8291e0c50ba2ad86877442fb
-  jqFilterParserTest29 :: GHC.Stack.Types.SrcLoc
+8d33f829880f0433dbb41a171e555775
+  jqFilterParserTest28 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.jqFilterParserSpacesTest26
                    Main.jqFilterParserSpacesTest25
                    Main.jqFilterParserSpacesTest24
-                   Main.jqFilterParserTest31
-                   Main.jqFilterParserTest17
-                   Main.jqFilterParserTest31
-                   Main.jqFilterParserTest30) -}
-4f09e079272587ded8715b6ec41c509c
+                   Main.jqFilterParserTest30
+                   Main.jqFilterParserSpacesTest23
+                   Main.jqFilterParserTest30
+                   Main.jqFilterParserTest29) -}
+8d739147e6abd212e1f557227785f2c7
+  jqFilterParserTest29 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 118#) -}
+ac517498b78bb13d9d00132e9d1e1df2
   jqFilterParserTest3 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
-                   Main.jqFilterParserTest33
+                   Main.jqFilterParserTest32
                    Main.jqFilterParserTest4) -}
-d967471ce130c61632dd2f5a36996632
+a660e8ab743873b1b7f1bbba26a8ff3a
   jqFilterParserTest30 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 118#) -}
-34e7b78ee41e2e536cbc570b540ab7e0
-  jqFilterParserTest31 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 24#) -}
-5fabdc1ff222d92fc78e2ccda9ea5124
-  jqFilterParserTest32 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 25#) -}
+ac41094175997517a3dda65aa0678940
+  jqFilterParserTest31 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "jqFilterParser test 4"#) -}
-5c4807a0bf791b7d08a903eddd8cd5fb
-  jqFilterParserTest33 :: Test.HUnit.Base.Test
+591ebf95561be3eb1d5bea19d2b75b47
+  jqFilterParserTest32 :: Test.HUnit.Base.Test
   {- Strictness: m3,
      Unfolding: (Test.HUnit.Base.TestLabel
-                   Main.jqFilterParserTest45
-                   Main.jqFilterParserTest34) -}
-25e4f60dc30ee0305c111fe04f5a3d6e
-  jqFilterParserTest34 :: Test.HUnit.Base.Test
+                   Main.jqFilterParserTest44
+                   Main.jqFilterParserTest33) -}
+cb66a41c4b6243535da0249c452c7009
+  jqFilterParserTest33 :: Test.HUnit.Base.Test
   {- Strictness: m1,
-     Unfolding: (Test.HUnit.Base.TestCase Main.jqFilterParserTest35) -}
-54c84cb4cdef05356e1c2c13cd4080e0
-  jqFilterParserTest35 :: Test.HUnit.Lang.Assertion
-  {- Unfolding: (Main.jqFilterParserTest38
+     Unfolding: (Test.HUnit.Base.TestCase Main.jqFilterParserTest34) -}
+251b5751bcf4cc5c4afcc5a31f25a532
+  jqFilterParserTest34 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.jqFilterParserTest37
                    (GHC.Types.[] @ GHC.Types.Char)
                    Main.jqFilterParserSpacesTest50
-                   Main.jqFilterParserTest36) -}
-42089f51e1e737351b1ed5d83ec650a3
-  jqFilterParserTest36 ::
+                   Main.jqFilterParserTest35) -}
+89786ee69344366f7c150578cc5882e3
+  jqFilterParserTest35 ::
     Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
   {- Unfolding: (Data.Hjq.Parser.parserJqFilter
-                   Main.jqFilterParserTest37) -}
-658da24a8e5a54db92cccd3ffe46ffb6
-  jqFilterParserTest37 :: Data.Text.Internal.Text
+                   Main.jqFilterParserTest36) -}
+84504134c953f2f239271dab963b3d41
+  jqFilterParserTest36 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# ".fieldName"#) -}
-727fffce38e57e63fee106bb53c04576
-  jqFilterParserTest38 ::
+f3553532d136e436bfac60eaf2b4e64d
+  jqFilterParserTest37 ::
     GHC.Base.String
     -> Data.Either.Either
          Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
@@ -863,90 +921,90 @@ d967471ce130c61632dd2f5a36996632
   {- Unfolding: (Test.HUnit.Lang.assertEqual
                    @ (Data.Either.Either
                         Data.Text.Internal.Text Data.Hjq.Parser.JqFilter)
-                   Main.jqFilterParserTest39
+                   Main.jqFilterParserTest38
                      `cast`
                    (Sym (GHC.Classes.N:IP[0]
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    Main.$s$fEqEither
                    Main.$s$fShowEither) -}
-5716e89c4191cf859e5afa9586cf40d0
-  jqFilterParserTest39 :: GHC.Stack.Types.CallStack
+b174acf7f87ca763eff0953c84183a84
+  jqFilterParserTest38 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
+                   Main.jqFilterParserTest39) -}
+6f3cec786e5663fa2480486d94bd65fc
+  jqFilterParserTest39 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.~?=3
+                   Test.HUnit.Base.~?=1
                    Main.jqFilterParserTest40) -}
-ad63519bcdc4a64edb5a580a23030a7d
+fa6e67c8d504f7aa7abff0737ad311ad
   jqFilterParserTest4 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
-                   Main.jqFilterParserTest20
+                   Main.jqFilterParserTest19
                    Main.jqFilterParserTest5) -}
-83d040e8da4566ad1b4578a3e1d3e501
+c9db9cd0174b9f785f2a91de699b2a45
   jqFilterParserTest40 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.HUnit.Base.~?=3
-                   Test.HUnit.Base.~?=1
-                   Main.jqFilterParserTest41) -}
-b05c807359ef0931cc04553b58e0f0fc
-  jqFilterParserTest41 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.jqFilterParserSpacesTest27
-                   Main.jqFilterParserTest42
+                   Main.jqFilterParserTest41
                    GHC.Stack.Types.EmptyCallStack) -}
-48dae9f40ae0d472112ee2772cf2de2c
-  jqFilterParserTest42 :: GHC.Stack.Types.SrcLoc
+7aa178ea627c9a96a7c97e10789a9304
+  jqFilterParserTest41 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.jqFilterParserSpacesTest26
                    Main.jqFilterParserSpacesTest25
                    Main.jqFilterParserSpacesTest24
-                   Main.jqFilterParserTest44
-                   Main.jqFilterParserTest17
-                   Main.jqFilterParserTest44
-                   Main.jqFilterParserTest43) -}
-da674fdf4c8fc0787d6f076deb158e03
-  jqFilterParserTest43 :: GHC.Types.Int
+                   Main.jqFilterParserTest43
+                   Main.jqFilterParserSpacesTest23
+                   Main.jqFilterParserTest43
+                   Main.jqFilterParserTest42) -}
+2931a6c9c3be192a3b20c15b9d14e715
+  jqFilterParserTest42 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 102#) -}
-ca3a8014ec27f33eccbc27afaf25d842
-  jqFilterParserTest44 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 23#) -}
-56cc1f0de9225961562e37d9ae7cf062
-  jqFilterParserTest45 :: [GHC.Types.Char]
+f6fd37ea8659f38bbfaab36f5e09554e
+  jqFilterParserTest43 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 24#) -}
+52c976b766bb535518c7f2fd9730d6d5
+  jqFilterParserTest44 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "jqFilterParser test 3"#) -}
-d264a2bce714bf605cec04fcbbad4131
-  jqFilterParserTest46 :: Test.HUnit.Base.Test
+b2c5d67ae6faf6be55e58eed5f504949
+  jqFilterParserTest45 :: Test.HUnit.Base.Test
   {- Strictness: m3,
      Unfolding: (Test.HUnit.Base.TestLabel
-                   Main.jqFilterParserTest58
-                   Main.jqFilterParserTest47) -}
-cad367a8339b4608918adc1cfab66253
-  jqFilterParserTest47 :: Test.HUnit.Base.Test
+                   Main.jqFilterParserTest57
+                   Main.jqFilterParserTest46) -}
+15d6315a00d5bbe290a879bfebc72dbd
+  jqFilterParserTest46 :: Test.HUnit.Base.Test
   {- Strictness: m1,
-     Unfolding: (Test.HUnit.Base.TestCase Main.jqFilterParserTest48) -}
-6dd7adc4f911aaf06fc467a863dddc74
-  jqFilterParserTest48 :: Test.HUnit.Lang.Assertion
-  {- Unfolding: (Main.jqFilterParserTest51
+     Unfolding: (Test.HUnit.Base.TestCase Main.jqFilterParserTest47) -}
+45dcf1d743056d872baeae4ebe66f44a
+  jqFilterParserTest47 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.jqFilterParserTest50
                    (GHC.Types.[] @ GHC.Types.Char)
                    Main.jqFilterParserSpacesTest64
-                   Main.jqFilterParserTest49) -}
-e676b5252bd4bcf89959a11f35abc277
-  jqFilterParserTest49 ::
+                   Main.jqFilterParserTest48) -}
+4f0932b93a07de4f61c087379692dabf
+  jqFilterParserTest48 ::
     Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
   {- Unfolding: (Data.Hjq.Parser.parserJqFilter
-                   Main.jqFilterParserTest50) -}
-e327d651bb26e6093d799b77f9b406ea
+                   Main.jqFilterParserTest49) -}
+70b122b1c09d613581be1eb8223aa53f
+  jqFilterParserTest49 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# ".[0]"#) -}
+fbcc9f76ea25b3edd6fd5d6509276b96
   jqFilterParserTest5 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
                    Main.jqFilterParserTest6
                    (GHC.Types.[] @ Test.HUnit.Base.Test)) -}
-3ba95b76b0a7c7f7ddf0d449ff4693b8
-  jqFilterParserTest50 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# ".[0]"#) -}
-c0d00f48cb5b47b4fb183cd0356537c1
-  jqFilterParserTest51 ::
+a4177803bf3d029c0d2c5a2ada0b840e
+  jqFilterParserTest50 ::
     GHC.Base.String
     -> Data.Either.Either
          Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
@@ -956,82 +1014,82 @@ c0d00f48cb5b47b4fb183cd0356537c1
   {- Unfolding: (Test.HUnit.Lang.assertEqual
                    @ (Data.Either.Either
                         Data.Text.Internal.Text Data.Hjq.Parser.JqFilter)
-                   Main.jqFilterParserTest52
+                   Main.jqFilterParserTest51
                      `cast`
                    (Sym (GHC.Classes.N:IP[0]
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    Main.$s$fEqEither
                    Main.$s$fShowEither) -}
-4f80db55647c6bde26f309bc637dd8ba
-  jqFilterParserTest52 :: GHC.Stack.Types.CallStack
+63f0d8d6c9cb6e7a3ce15d7ceba20769
+  jqFilterParserTest51 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
-                   Main.jqFilterParserTest53) -}
-6204fecd73d3a10b6789f7f1f9686a6e
-  jqFilterParserTest53 :: GHC.Stack.Types.CallStack
+                   Main.jqFilterParserTest52) -}
+879694304ab320e2526bafc1e6f04882
+  jqFilterParserTest52 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.~?=3
                    Test.HUnit.Base.~?=1
-                   Main.jqFilterParserTest54) -}
-5d58f8e17c4e145b1fef2e43c573bc2b
-  jqFilterParserTest54 :: GHC.Stack.Types.CallStack
+                   Main.jqFilterParserTest53) -}
+e4b68d45ca2472c23ec6a77293161db5
+  jqFilterParserTest53 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.jqFilterParserSpacesTest27
-                   Main.jqFilterParserTest55
+                   Main.jqFilterParserTest54
                    GHC.Stack.Types.EmptyCallStack) -}
-29a37d7522fee8c9874e835c507823b8
-  jqFilterParserTest55 :: GHC.Stack.Types.SrcLoc
+24abb4e11a6d03a5de227ab4406cd2b6
+  jqFilterParserTest54 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.jqFilterParserSpacesTest26
                    Main.jqFilterParserSpacesTest25
                    Main.jqFilterParserSpacesTest24
-                   Main.jqFilterParserTest57
-                   Main.jqFilterParserTest17
-                   Main.jqFilterParserTest57
-                   Main.jqFilterParserTest56) -}
-60cf6f11a7f877191a2f95007673e5a7
-  jqFilterParserTest56 :: GHC.Types.Int
+                   Main.jqFilterParserTest56
+                   Main.jqFilterParserSpacesTest23
+                   Main.jqFilterParserTest56
+                   Main.jqFilterParserTest55) -}
+33e02a6e10ec9b0a4bd473a0181202b4
+  jqFilterParserTest55 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 86#) -}
-840b8a8f666a3962fecdd1dc4c4246aa
-  jqFilterParserTest57 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 22#) -}
-0b4db9d6cedd48c7f5d2eb402b448791
-  jqFilterParserTest58 :: [GHC.Types.Char]
+058d855002c0350bcae181b115c0771d
+  jqFilterParserTest56 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 23#) -}
+1146e8fcc8a58994ef8f9cdde4056774
+  jqFilterParserTest57 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "jqFilterParser test 2"#) -}
-46f21a593e75804951406dcade2532e4
-  jqFilterParserTest59 :: Test.HUnit.Base.Test
+77a73655a6c060500b10e4246a299d5d
+  jqFilterParserTest58 :: Test.HUnit.Base.Test
   {- Strictness: m3,
      Unfolding: (Test.HUnit.Base.TestLabel
-                   Main.jqFilterParserTest71
-                   Main.jqFilterParserTest60) -}
-8b7512fb64e6f9ff9a4cc7d087908c1e
+                   Main.jqFilterParserTest70
+                   Main.jqFilterParserTest59) -}
+0bec9023cb48c64beb0d4b48a56870a4
+  jqFilterParserTest59 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase Main.jqFilterParserTest60) -}
+5528158fb7dc349b84a28cec5526ae52
   jqFilterParserTest6 :: Test.HUnit.Base.Test
   {- Strictness: m3,
      Unfolding: (Test.HUnit.Base.TestLabel
-                   Main.jqFilterParserTest19
+                   Main.jqFilterParserTest18
                    Main.jqFilterParserTest7) -}
-ab4f8bd7b24540f91239e6414aebc6f8
-  jqFilterParserTest60 :: Test.HUnit.Base.Test
-  {- Strictness: m1,
-     Unfolding: (Test.HUnit.Base.TestCase Main.jqFilterParserTest61) -}
-8606027ee4d275a3f65575cadcd8eaa1
-  jqFilterParserTest61 :: Test.HUnit.Lang.Assertion
-  {- Unfolding: (Main.jqFilterParserTest64
+4f497dde1f3e17ada0d15ad72a0200f6
+  jqFilterParserTest60 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.jqFilterParserTest63
                    (GHC.Types.[] @ GHC.Types.Char)
                    Main.jqFilterParserSpacesTest78
-                   Main.jqFilterParserTest62) -}
-9efb9faac2d3319ee2cda3a262dba9ab
-  jqFilterParserTest62 ::
+                   Main.jqFilterParserTest61) -}
+dc563bfbfa75699f4e27095e7feb3d63
+  jqFilterParserTest61 ::
     Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
   {- Unfolding: (Data.Hjq.Parser.parserJqFilter
-                   Main.jqFilterParserTest63) -}
-ec007810be1c5b53763e23d511fdf77f
-  jqFilterParserTest63 :: Data.Text.Internal.Text
+                   Main.jqFilterParserTest62) -}
+b15e56536ed6c74335391cfffd01af4b
+  jqFilterParserTest62 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "."#) -}
-abdc6b2bbe91705aefa16502ba4cddbd
-  jqFilterParserTest64 ::
+d243ed89042d197e277bad283afce252
+  jqFilterParserTest63 ::
     GHC.Base.String
     -> Data.Either.Either
          Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
@@ -1041,55 +1099,55 @@ abdc6b2bbe91705aefa16502ba4cddbd
   {- Unfolding: (Test.HUnit.Lang.assertEqual
                    @ (Data.Either.Either
                         Data.Text.Internal.Text Data.Hjq.Parser.JqFilter)
-                   Main.jqFilterParserTest65
+                   Main.jqFilterParserTest64
                      `cast`
                    (Sym (GHC.Classes.N:IP[0]
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    Main.$s$fEqEither
                    Main.$s$fShowEither) -}
-a2d580f61d3bcc7f066a6e7a3daea699
-  jqFilterParserTest65 :: GHC.Stack.Types.CallStack
+0b7f5aebc1bca421f3c942aad7a96e20
+  jqFilterParserTest64 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
-                   Main.jqFilterParserTest66) -}
-70fc6772e2f75a11f2c258ab46ceb292
-  jqFilterParserTest66 :: GHC.Stack.Types.CallStack
+                   Main.jqFilterParserTest65) -}
+d2eac73d54f38cd643b84abaee021076
+  jqFilterParserTest65 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.~?=3
                    Test.HUnit.Base.~?=1
-                   Main.jqFilterParserTest67) -}
-21357a44baf4ba9cbb03151a0ebed1ab
-  jqFilterParserTest67 :: GHC.Stack.Types.CallStack
+                   Main.jqFilterParserTest66) -}
+c641600c38c45c87669949a63a505c5b
+  jqFilterParserTest66 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.jqFilterParserSpacesTest27
-                   Main.jqFilterParserTest68
+                   Main.jqFilterParserTest67
                    GHC.Stack.Types.EmptyCallStack) -}
-fc0833549d6458f78b72a4f73d6d77cd
-  jqFilterParserTest68 :: GHC.Stack.Types.SrcLoc
+03c24733ea911bd225dd885ae9eb8527
+  jqFilterParserTest67 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.jqFilterParserSpacesTest26
                    Main.jqFilterParserSpacesTest25
                    Main.jqFilterParserSpacesTest24
-                   Main.jqFilterParserTest70
-                   Main.jqFilterParserSpacesTest23
-                   Main.jqFilterParserTest70
-                   Main.jqFilterParserTest69) -}
-f1da183fc2ce0214bfd2d4d0e68fcb52
-  jqFilterParserTest69 :: GHC.Types.Int
+                   Main.jqFilterParserTest69
+                   Main.jqFilterParserSpacesTest43
+                   Main.jqFilterParserTest69
+                   Main.jqFilterParserTest68) -}
+e93cba6654f5fe1e38c1250fcc7f523f
+  jqFilterParserTest68 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 70#) -}
-ed9e5ec8be67c96dfebc83069d6f4a3b
+dac3f3695683b42e901aad301be63a04
+  jqFilterParserTest69 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 22#) -}
+d483cabae88a9789539c4d1d86f4a77f
   jqFilterParserTest7 :: Test.HUnit.Base.Test
   {- Strictness: m1,
      Unfolding: (Test.HUnit.Base.TestCase Main.jqFilterParserTest8) -}
-f10e563965cc1da54a92e2ddf3124588
-  jqFilterParserTest70 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 21#) -}
-d18585d452542a86481309ada3a50c8c
-  jqFilterParserTest71 :: [GHC.Types.Char]
+626bcfbba2738f4c90389694b1643312
+  jqFilterParserTest70 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "jqFilterParser test 1"#) -}
-2ba29be3b478dbf03bc86fedf2dc70dd
+bc74dffc41c6fef0cce7fe36cef4adb3
   jqFilterParserTest8 :: Test.HUnit.Lang.Assertion
   {- Unfolding: (Main.jqFilterParserTest11
                    (GHC.Types.[] @ GHC.Types.Char)
@@ -1100,12 +1158,349 @@ d18585d452542a86481309ada3a50c8c
     Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
   {- Unfolding: (Data.Hjq.Parser.parserJqFilter
                    Main.jqFilterParserTest10) -}
-129b9ed21015237abf8220399a181f8b
+7090448f11c1a0cd3c53c3beee75fe0a
+  jqQueryParserTest :: Test.HUnit.Base.Test
+  {- Strictness: m2,
+     Unfolding: (Test.HUnit.Base.TestList Main.jqQueryParserTest1) -}
+b94bcbe6b3f53c4f538e2115596abcdd
+  jqQueryParserTest1 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.jqQueryParserTest45
+                   Main.jqQueryParserTest2) -}
+7b31c1669d8bc13666087c9f60128122
+  jqQueryParserTest10 ::
+    [(Data.Text.Internal.Text, Data.Hjq.Parser.JqQuery)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Hjq.Parser.JqQuery)
+                   Main.jqQueryParserTest11
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Hjq.Parser.JqQuery))) -}
+767dfbe675a6a3cca88f893018e74b7d
+  jqQueryParserTest11 ::
+    (Data.Text.Internal.Text, Data.Hjq.Parser.JqQuery)
+  {- Unfolding: ((Main.jqQueryParserTest13,
+                  Main.jqQueryParserTest12)) -}
+c2f5fc0a2314fa45405ea5ab80bd6605
+  jqQueryParserTest12 :: Data.Hjq.Parser.JqQuery
+  {- HasNoCafRefs,
+     Unfolding: (Data.Hjq.Parser.JqQueryArray
+                   (GHC.Types.[] @ Data.Hjq.Parser.JqQuery)) -}
+501a4fb5d52ab6be197a31c14944908d
+  jqQueryParserTest13 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "piyo"#) -}
+f647ca94b9186169ea1a14d083a1cb2b
+  jqQueryParserTest14 ::
+    (Data.Text.Internal.Text, Data.Hjq.Parser.JqQuery)
+  {- Unfolding: ((Main.jqQueryParserTest15,
+                  Main.jqQueryParserTest12)) -}
+7efc16cdb3ce02e2e50801a58a81048b
+  jqQueryParserTest15 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "hoge"#) -}
+13cfff2f4e84661a410b66acc9de9fdd
+  jqQueryParserTest16 ::
+    GHC.Base.String
+    -> Data.Either.Either
+         Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
+    -> Data.Either.Either
+         Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ (Data.Either.Either
+                        Data.Text.Internal.Text Data.Hjq.Parser.JqQuery)
+                   Main.jqQueryParserTest17
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   Main.$s$fEqEither1
+                   Main.$s$fShowEither1) -}
+e544cc8030fd5adfa8259ad8bb93232a
+  jqQueryParserTest17 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Main.jqQueryParserTest18) -}
+1b97f731c8a3e81cdbe735230e976ef0
+  jqQueryParserTest18 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.~?=3
+                   Test.HUnit.Base.~?=1
+                   Main.jqQueryParserTest19) -}
+2f01ae34601f88f0fc56a32513ad2581
+  jqQueryParserTest19 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.jqFilterParserSpacesTest27
+                   Main.jqQueryParserTest20
+                   GHC.Stack.Types.EmptyCallStack) -}
+102f541d2a01eb6a72a81fb411c61440
+  jqQueryParserTest2 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.jqQueryParserTest25
+                   Main.jqQueryParserTest3) -}
+842a54fadf54738de21b95219e76ccf0
+  jqQueryParserTest20 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.jqFilterParserSpacesTest26
+                   Main.jqFilterParserSpacesTest25
+                   Main.jqFilterParserSpacesTest24
+                   Main.jqQueryParserTest23
+                   Main.jqFilterParserSpacesTest57
+                   Main.jqQueryParserTest22
+                   Main.jqQueryParserTest21) -}
+3c99e0b991efe5bda5ae6c494abce2c0
+  jqQueryParserTest21 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 87#) -}
+0b326716aa6f9d006bb83aa67c6d92ed
+  jqQueryParserTest22 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 48#) -}
+22c7ca03d408000e8b67f5e4373c1dfd
+  jqQueryParserTest23 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 47#) -}
+d2e2f2073ff9c21c8d17f5f7859627dc
+  jqQueryParserTest24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "jqQueryParser test 3"#) -}
+14c519588c10dc6023b13cedb38e38b4
+  jqQueryParserTest25 :: Test.HUnit.Base.Test
+  {- Strictness: m3,
+     Unfolding: (Test.HUnit.Base.TestLabel
+                   Main.jqQueryParserTest44
+                   Main.jqQueryParserTest26) -}
+fe57c1a895b4f6f944e2eaed2c1bdfa9
+  jqQueryParserTest26 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase Main.jqQueryParserTest27) -}
+fe02b3448dddae41a3ed0add6f0ac2cd
+  jqQueryParserTest27 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.jqQueryParserTest36
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Main.jqQueryParserTest28
+                   Data.Hjq.Parser.parseJqQuery1) -}
+73e0632b6e287c79a36c6354da8db531
+  jqQueryParserTest28 ::
+    Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
+  {- Unfolding: (Data.Either.Right
+                   @ Data.Text.Internal.Text
+                   @ Data.Hjq.Parser.JqQuery
+                   Main.jqQueryParserTest29) -}
+371f2f84b3e87aa51c0ac2020aef4357
+  jqQueryParserTest29 :: Data.Hjq.Parser.JqQuery
+  {- Unfolding: (Data.Hjq.Parser.JqQueryArray
+                   Main.jqQueryParserTest30) -}
+eff2c69a180eeb51f2c41486e409f94f
+  jqQueryParserTest3 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.jqQueryParserTest4
+                   (GHC.Types.[] @ Test.HUnit.Base.Test)) -}
+2ffbc685541955f6dad90d28d754c55a
+  jqQueryParserTest30 :: [Data.Hjq.Parser.JqQuery]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Hjq.Parser.JqQuery
+                   Main.jqQueryParserTest34
+                   Main.jqQueryParserTest31) -}
+24485c3ac8fc1266913755a0a4ac87bb
+  jqQueryParserTest31 :: [Data.Hjq.Parser.JqQuery]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Hjq.Parser.JqQuery
+                   Main.jqQueryParserTest32
+                   (GHC.Types.[] @ Data.Hjq.Parser.JqQuery)) -}
+aae7d7507c1fa074101017b8962b6e7e
+  jqQueryParserTest32 :: Data.Hjq.Parser.JqQuery
+  {- Unfolding: (Data.Hjq.Parser.JqQueryFilter
+                   Main.jqQueryParserTest33) -}
+b9a7f985a2f7b58c85ea44f03820def5
+  jqQueryParserTest33 :: Data.Hjq.Parser.JqFilter
+  {- Unfolding: (Data.Hjq.Parser.JqField
+                   Main.jqQueryParserTest13
+                   Data.Hjq.Parser.JqNil) -}
+662f83942120cad29acf901e11c7ec6f
+  jqQueryParserTest34 :: Data.Hjq.Parser.JqQuery
+  {- Unfolding: (Data.Hjq.Parser.JqQueryFilter
+                   Main.jqQueryParserTest35) -}
+a48189af3d61044d542eab654ce8462a
+  jqQueryParserTest35 :: Data.Hjq.Parser.JqFilter
+  {- Unfolding: (Data.Hjq.Parser.JqField
+                   Main.jqQueryParserTest15
+                   Data.Hjq.Parser.JqNil) -}
+888d0c0b27efb74f8693278caa9a09a5
+  jqQueryParserTest36 ::
+    GHC.Base.String
+    -> Data.Either.Either
+         Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
+    -> Data.Either.Either
+         Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ (Data.Either.Either
+                        Data.Text.Internal.Text Data.Hjq.Parser.JqQuery)
+                   Main.jqQueryParserTest37
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   Main.$s$fEqEither1
+                   Main.$s$fShowEither1) -}
+f8d94011a5459b9e7602117848304c53
+  jqQueryParserTest37 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Main.jqQueryParserTest38) -}
+8aa9f51a37f04b316b16710a4aaa3cda
+  jqQueryParserTest38 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.~?=3
+                   Test.HUnit.Base.~?=1
+                   Main.jqQueryParserTest39) -}
+6f0bc1592a4926aa84d5cfdba80f7681
+  jqQueryParserTest39 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.jqFilterParserSpacesTest27
+                   Main.jqQueryParserTest40
+                   GHC.Stack.Types.EmptyCallStack) -}
+bcb1de0a4a84db0718ec9752b08e34ee
+  jqQueryParserTest4 :: Test.HUnit.Base.Test
+  {- Strictness: m3,
+     Unfolding: (Test.HUnit.Base.TestLabel
+                   Main.jqQueryParserTest24
+                   Main.jqQueryParserTest5) -}
+7109b273f73317f6af8cd47b945a98df
+  jqQueryParserTest40 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.jqFilterParserSpacesTest26
+                   Main.jqFilterParserSpacesTest25
+                   Main.jqFilterParserSpacesTest24
+                   Main.jqQueryParserTest43
+                   Main.jqFilterParserSpacesTest57
+                   Main.jqQueryParserTest42
+                   Main.jqQueryParserTest41) -}
+2de4b41192f54ac6c4d03e9a298ccd47
+  jqQueryParserTest41 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 107#) -}
+8bf58178bcf9127d7b32b0cf3cd0d4ea
+  jqQueryParserTest42 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 46#) -}
+d48e4b7e30c9802b3ac08ea5a26964ab
+  jqQueryParserTest43 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 45#) -}
+512f1d869ad74505f16e9737ce01fe59
+  jqQueryParserTest44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "jqQueryParser test 2"#) -}
+fb4ce4ba801939e4d458050bcb1554bc
+  jqQueryParserTest45 :: Test.HUnit.Base.Test
+  {- Strictness: m3,
+     Unfolding: (Test.HUnit.Base.TestLabel
+                   Main.jqQueryParserTest55
+                   Main.jqQueryParserTest46) -}
+66985c453114e5b3caf0487bdd4fe437
+  jqQueryParserTest46 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase Main.jqQueryParserTest47) -}
+0ade931a9f60468250d8d7ee58bdd6ad
+  jqQueryParserTest47 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.jqQueryParserTest49
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Main.jqQueryParserTest48
+                   Data.Hjq.Parser.parseJqQuery1) -}
+888c1fce64b398ab6b4425d6bdd90509
+  jqQueryParserTest48 ::
+    Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
+  {- HasNoCafRefs,
+     Unfolding: (Data.Either.Right
+                   @ Data.Text.Internal.Text
+                   @ Data.Hjq.Parser.JqQuery
+                   Main.jqQueryParserTest12) -}
+a5c4e8a94062907d2325ab3fe19b1aab
+  jqQueryParserTest49 ::
+    GHC.Base.String
+    -> Data.Either.Either
+         Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
+    -> Data.Either.Either
+         Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ (Data.Either.Either
+                        Data.Text.Internal.Text Data.Hjq.Parser.JqQuery)
+                   Main.jqQueryParserTest50
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   Main.$s$fEqEither1
+                   Main.$s$fShowEither1) -}
+82cfac9bc1bea3daf875db2b7282921c
+  jqQueryParserTest5 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase Main.jqQueryParserTest6) -}
+21ceccce483789a9e623a443ee02b675
+  jqQueryParserTest50 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Main.jqQueryParserTest51) -}
+c5cd91bf752666c9b688098dfcb070ef
+  jqQueryParserTest51 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.~?=3
+                   Test.HUnit.Base.~?=1
+                   Main.jqQueryParserTest52) -}
+65a6d2220a8f3cdb413dbd50c11fa23e
+  jqQueryParserTest52 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.jqFilterParserSpacesTest27
+                   Main.jqQueryParserTest53
+                   GHC.Stack.Types.EmptyCallStack) -}
+c02a5b7c9904274a86be185f3167bbee
+  jqQueryParserTest53 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.jqFilterParserSpacesTest26
+                   Main.jqFilterParserSpacesTest25
+                   Main.jqFilterParserSpacesTest24
+                   Main.jqFilterParserSpacesTest22
+                   Main.jqFilterParserSpacesTest57
+                   Main.jqFilterParserSpacesTest22
+                   Main.jqQueryParserTest54) -}
+6d1c27d3821b29e5d770010c3d4617c1
+  jqQueryParserTest54 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 80#) -}
+a7a655c621c6f42fcac04fbb25b6c91a
+  jqQueryParserTest55 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "jqQueryParser test 1"#) -}
+9d4ed3ee59bc59f12d0e4074c32b6133
+  jqQueryParserTest6 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.jqQueryParserTest16
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Main.jqQueryParserTest7
+                   Data.Hjq.Parser.parseJqQuery1) -}
+09ab9e0026f39e43b557f3eac8fb439f
+  jqQueryParserTest7 ::
+    Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
+  {- Unfolding: (Data.Either.Right
+                   @ Data.Text.Internal.Text
+                   @ Data.Hjq.Parser.JqQuery
+                   Main.jqQueryParserTest8) -}
+0ad7a90402ea760e81421ba47095f49e
+  jqQueryParserTest8 :: Data.Hjq.Parser.JqQuery
+  {- Unfolding: (Data.Hjq.Parser.JqQueryObject
+                   Main.jqQueryParserTest9) -}
+ec9dd711e8c3bd49873237465ca3e174
+  jqQueryParserTest9 ::
+    [(Data.Text.Internal.Text, Data.Hjq.Parser.JqQuery)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Hjq.Parser.JqQuery)
+                   Main.jqQueryParserTest14
+                   Main.jqQueryParserTest10) -}
+325de3a86040c7357ac10fadc1ba6070
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-ae812270439a45dc458c4e2f34d0636c
+311133279f11a94dea6f82fb70f754ad
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -1143,23 +1538,29 @@ f6cff754cc6dc1f89e02c82b78ac6058
                    Test.HUnit.Text.runTestTT2
                    (GHC.Base.Nothing @ Foreign.C.Types.CInt)
                    (GHC.Base.Nothing @ GHC.IO.FilePath)) -}
-eb26919ab4aa731339eddb8e9d898ec9
+dbe44e9973efaa8d1ef13580f917c567
   main4 :: Test.HUnit.Base.Test
   {- Unfolding: (Test.HUnit.Base.TestList Main.main5) -}
-cfe858787da24e594b10cf3a6e3987fc
+5c9ed74b7ec1f7a89ec2eb770f001159
   main5 :: [Test.HUnit.Base.Test]
   {- Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
                    Main.jqFilterParserTest
                    Main.main6) -}
-5699b79772be30d25aaceee5ad1d68cb
+5cd7152c7897cc34da64776940880773
   main6 :: [Test.HUnit.Base.Test]
   {- Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
                    Main.jqFilterParserSpacesTest
+                   Main.main7) -}
+1cc23c802143aff2d4a1b0f882a27f3d
+  main7 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.jqQueryParserTest
                    (GHC.Types.[] @ Test.HUnit.Base.Test)) -}
-c71f6b1b4d5fad8e9c713541f78ee9b6
-  main7 ::
+fb6463fab8b0c4aea4bd0ed35eef508e
+  main8 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
@@ -1175,6 +1576,15 @@ c71f6b1b4d5fad8e9c713541f78ee9b6
                          $dEq
                          $dEq1
   = Main.$s$fEqEither
+"SPEC/Main $fEqEither @ Text @ JqQuery" [ALWAYS] forall ($dEq1 :: GHC.Classes.Eq
+                                                                    Data.Text.Internal.Text)
+                                                        ($dEq :: GHC.Classes.Eq
+                                                                   Data.Hjq.Parser.JqQuery)
+  Data.Either.$fEqEither @ Data.Text.Internal.Text
+                         @ Data.Hjq.Parser.JqQuery
+                         $dEq
+                         $dEq1
+  = Main.$s$fEqEither1
 "SPEC/Main $fShowEither @ Text @ JqFilter" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
                                                                          Data.Text.Internal.Text)
                                                            ($dShow :: GHC.Show.Show
@@ -1184,6 +1594,15 @@ c71f6b1b4d5fad8e9c713541f78ee9b6
                            $dShow
                            $dShow1
   = Main.$s$fShowEither
+"SPEC/Main $fShowEither @ Text @ JqQuery" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
+                                                                        Data.Text.Internal.Text)
+                                                          ($dShow :: GHC.Show.Show
+                                                                       Data.Hjq.Parser.JqQuery)
+  Data.Either.$fShowEither @ Data.Text.Internal.Text
+                           @ Data.Hjq.Parser.JqQuery
+                           $dShow
+                           $dShow1
+  = Main.$s$fShowEither1
 "SPEC/Main $fShowEither_$cshowList @ Text @ JqFilter" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
                                                                                     Data.Text.Internal.Text)
                                                                       ($dShow :: GHC.Show.Show
@@ -1193,6 +1612,15 @@ c71f6b1b4d5fad8e9c713541f78ee9b6
                                       $dShow
                                       $dShow1
   = Main.$s$fShowEither_$s$fShowEither_$cshowList
+"SPEC/Main $fShowEither_$cshowList @ Text @ JqQuery" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
+                                                                                   Data.Text.Internal.Text)
+                                                                     ($dShow :: GHC.Show.Show
+                                                                                  Data.Hjq.Parser.JqQuery)
+  Data.Either.$fShowEither_$cshowList @ Data.Text.Internal.Text
+                                      @ Data.Hjq.Parser.JqQuery
+                                      $dShow
+                                      $dShow1
+  = Main.$s$fShowEither_$s$fShowEither_$cshowList1
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
