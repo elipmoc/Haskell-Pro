@@ -10,4 +10,4 @@ data JqFilter
 
 --ユーザーの入力をパースする
 parserJqFilter :: Text -> Either Text JqFilter
-parserJqFilter s =undefined -- 仮実装
+parserJqFilter _ = Right JqNil

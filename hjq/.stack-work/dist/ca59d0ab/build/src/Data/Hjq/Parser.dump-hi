@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-05 06:04:47.0822163 UTC
+2017-12-05 06:16:31.2033372 UTC
 
 interface hjq-0.1.0.0-HRaK9hMtTPoJCa44FpZvPW:Data.Hjq.Parser 8002
-  interface hash: b742b29ccb1bdc6a7c2adc7e1a9f10da
-  ABI hash: 431764d72b23685415da433273f2380a
+  interface hash: 937997660d592c538e1adb07722c3e30
+  ABI hash: 4d5d053b94d951d035fb4445e11ca584
   export-list hash: 0b620acc317507c5a7f3f9966dfafce9
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 4754311c2201dfee8aed906fa5514446
@@ -43,7 +43,6 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
 import  -/  base-4.9.1.0:Data.Either 186ef9adf6b47e24f39efe9b2e18e352
 import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
-import  -/  base-4.9.1.0:GHC.Err 20faef8829fd13c027d0ee2213637534
 import  -/  base-4.9.1.0:GHC.Read 823163de9fa29f31f251382abc171b2b
 import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
@@ -303,19 +302,23 @@ d9b8245d63fb04a66b8c427e65472c11
     = JqField Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
     | JqIndex GHC.Types.Int Data.Hjq.Parser.JqFilter
     | JqNil
-5a7880cb4a7aee45c2b18d31145b4ab4
+aeab8ed00017a10907b79db41e683b9c
   parserJqFilter ::
     Data.Text.Internal.Text
     -> Data.Either.Either
          Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
-  {- Arity: 1, Strictness: <B,A>x,
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m2,
      Unfolding: InlineRule (1, True, True)
-                (\ (s :: Data.Text.Internal.Text) ->
+                (\ (ds :: Data.Text.Internal.Text) ->
                  Data.Hjq.Parser.parserJqFilter1) -}
-2d93fdea1e352b95e26c5bd36bdb1384
+e081e6d6c0d00e6faf5c604d9a1bc084
   parserJqFilter1 ::
     Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
-  {- Strictness: x -}
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Data.Either.Right
+                   @ Data.Text.Internal.Text
+                   @ Data.Hjq.Parser.JqFilter
+                   Data.Hjq.Parser.JqNil) -}
 instance [safe] GHC.Classes.Eq [Data.Hjq.Parser.JqFilter]
   = Data.Hjq.Parser.$fEqJqFilter
 instance [safe] GHC.Read.Read [Data.Hjq.Parser.JqFilter]
