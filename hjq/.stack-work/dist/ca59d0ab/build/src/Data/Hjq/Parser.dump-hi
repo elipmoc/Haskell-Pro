@@ -1,0 +1,332 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-05 06:04:47.0822163 UTC
+
+interface hjq-0.1.0.0-HRaK9hMtTPoJCa44FpZvPW:Data.Hjq.Parser 8002
+  interface hash: b742b29ccb1bdc6a7c2adc7e1a9f10da
+  ABI hash: 431764d72b23685415da433273f2380a
+  export-list hash: 0b620acc317507c5a7f3f9966dfafce9
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4754311c2201dfee8aed906fa5514446
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Hjq.Parser.parserJqFilter
+  Data.Hjq.Parser.JqFilter{Data.Hjq.Parser.JqField Data.Hjq.Parser.JqIndex Data.Hjq.Parser.JqNil}
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00*
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+import  -/  base-4.9.1.0:Data.Either 186ef9adf6b47e24f39efe9b2e18e352
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Err 20faef8829fd13c027d0ee2213637534
+import  -/  base-4.9.1.0:GHC.Read 823163de9fa29f31f251382abc171b2b
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:Text.ParserCombinators.ReadPrec 5cc8ec62ab8aeda628247695b64f5e42
+import  -/  base-4.9.1.0:Text.Read.Lex a861691fe58d2d0a125f55a5ebadf631
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text 60ee6e2213faa3c3f5680c74ec6dedf8
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 95940720afdbe18ada37ea3a0ad8c1a0
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fEqJqFilter :: GHC.Classes.Eq Data.Hjq.Parser.JqFilter
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Hjq.Parser.JqFilter
+                  Data.Hjq.Parser.$fEqJqFilter_$c==
+                  Data.Hjq.Parser.$fEqJqFilter_$c/= -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fEqJqFilter_$c/= ::
+    Data.Hjq.Parser.JqFilter
+    -> Data.Hjq.Parser.JqFilter -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.Hjq.Parser.JqFilter)
+                   (b :: Data.Hjq.Parser.JqFilter) ->
+                 case Data.Hjq.Parser.$fEqJqFilter_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fEqJqFilter_$c== ::
+    Data.Hjq.Parser.JqFilter
+    -> Data.Hjq.Parser.JqFilter -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fReadJqFilter :: GHC.Read.Read Data.Hjq.Parser.JqFilter
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Hjq.Parser.JqFilter
+                  Data.Hjq.Parser.$fReadJqFilter_$creadsPrec
+                  Data.Hjq.Parser.$fReadJqFilter_$creadList
+                  Data.Hjq.Parser.$fReadJqFilter_$creadPrec
+                  Data.Hjq.Parser.$fReadJqFilter_$creadListPrec -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fReadJqFilter1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       ([Data.Hjq.Parser.JqFilter] -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta1 :: [Data.Hjq.Parser.JqFilter]
+                            -> Text.ParserCombinators.ReadP.P b) ->
+                 GHC.Read.list1
+                   @ Data.Hjq.Parser.JqFilter
+                   Data.Hjq.Parser.$fReadJqFilter2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Data.Hjq.Parser.JqFilter>_R))
+                   eta
+                   @ b
+                   eta1) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fReadJqFilter2 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP Data.Hjq.Parser.JqFilter
+  {- Arity: 1,
+     Unfolding: (GHC.Read.parens1
+                   @ Data.Hjq.Parser.JqFilter
+                   Data.Hjq.Parser.$fReadJqFilter3
+                     `cast`
+                   (Trans
+                        (<Text.ParserCombinators.ReadPrec.Prec>_R
+                         ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                       <Data.Hjq.Parser.JqFilter>_R))
+                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                  <Data.Hjq.Parser.JqFilter>_R)))) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fReadJqFilter3 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Data.Hjq.Parser.JqFilter -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,1*U(U)><L,C(U)> -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fReadJqFilter4 ::
+    Text.ParserCombinators.ReadP.P [Data.Hjq.Parser.JqFilter]
+  {- Unfolding: (GHC.Read.list1
+                   @ Data.Hjq.Parser.JqFilter
+                   Data.Hjq.Parser.$fReadJqFilter2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Data.Hjq.Parser.JqFilter>_R))
+                   GHC.Read.$fRead()5
+                   @ [Data.Hjq.Parser.JqFilter]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [Data.Hjq.Parser.JqFilter])) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fReadJqFilter_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [Data.Hjq.Parser.JqFilter]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [Data.Hjq.Parser.JqFilter]
+                   Data.Hjq.Parser.$fReadJqFilter4) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fReadJqFilter_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec [Data.Hjq.Parser.JqFilter]
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.Hjq.Parser.$fReadJqFilter1
+                  `cast`
+                (Trans
+                     (<Text.ParserCombinators.ReadPrec.Prec>_R
+                      ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <[Data.Hjq.Parser.JqFilter]>_R))
+                     (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                               <[Data.Hjq.Parser.JqFilter]>_R))) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fReadJqFilter_$creadPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec Data.Hjq.Parser.JqFilter
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Data.Hjq.Parser.$fReadJqFilter2
+                  `cast`
+                (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                          <Data.Hjq.Parser.JqFilter>_R)) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fReadJqFilter_$creadsPrec ::
+    GHC.Types.Int
+    -> Text.ParserCombinators.ReadP.ReadS Data.Hjq.Parser.JqFilter
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ Data.Hjq.Parser.JqFilter
+                   ((GHC.Read.parens1
+                       @ Data.Hjq.Parser.JqFilter
+                       Data.Hjq.Parser.$fReadJqFilter3
+                         `cast`
+                       (Trans
+                            (<Text.ParserCombinators.ReadPrec.Prec>_R
+                             ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                           <Data.Hjq.Parser.JqFilter>_R))
+                            (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                      <Data.Hjq.Parser.JqFilter>_R)))
+                       eta)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0]
+                         <Data.Hjq.Parser.JqFilter>_R)
+                      @ Data.Hjq.Parser.JqFilter
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ Data.Hjq.Parser.JqFilter))) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fShowJqFilter :: GHC.Show.Show Data.Hjq.Parser.JqFilter
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Hjq.Parser.JqFilter
+                  Data.Hjq.Parser.$fShowJqFilter_$cshowsPrec
+                  Data.Hjq.Parser.$fShowJqFilter_$cshow
+                  Data.Hjq.Parser.$fShowJqFilter_$cshowList -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fShowJqFilter1 :: Data.Hjq.Parser.JqFilter -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Data.Hjq.Parser.$fShowJqFilter_$cshowsPrec
+                   Data.Hjq.Parser.$fShowJqFilter2) -}
+6d0b6694fbf9a8bacae36bd932bcaffb
+  $fShowJqFilter2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fShowJqFilter_$cshow ::
+    Data.Hjq.Parser.JqFilter -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.Hjq.Parser.JqFilter) ->
+                 Data.Hjq.Parser.$fShowJqFilter_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fShowJqFilter_$cshowList ::
+    [Data.Hjq.Parser.JqFilter] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Data.Hjq.Parser.JqFilter
+                   Data.Hjq.Parser.$fShowJqFilter1) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  $fShowJqFilter_$cshowsPrec ::
+    GHC.Types.Int -> Data.Hjq.Parser.JqFilter -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+ed02979f25192e638d46e37cd2284743
+  $tc'JqField :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3790920221116893937##
+                   12899808118061956789##
+                   Data.Hjq.Parser.$trModule
+                   Data.Hjq.Parser.$tc'JqField1) -}
+2ec1791604a3002c61e7d881764d770d
+  $tc'JqField1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'JqField"#) -}
+a572a2bae48918bfd2072d80c259aed2
+  $tc'JqIndex :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9394772566164294524##
+                   6609699255127499984##
+                   Data.Hjq.Parser.$trModule
+                   Data.Hjq.Parser.$tc'JqIndex1) -}
+fedc21e35a225f3c23fc4ab34df23d35
+  $tc'JqIndex1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'JqIndex"#) -}
+2d8604fe4a1f017d973288ecbe9b56fc
+  $tc'JqNil :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13588056916476732672##
+                   18196279120318310673##
+                   Data.Hjq.Parser.$trModule
+                   Data.Hjq.Parser.$tc'JqNil1) -}
+ee87b25bfb4faf309f7f0d34cd148e4e
+  $tc'JqNil1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'JqNil"#) -}
+b9c628cd445db0006737d0f55f53bd36
+  $tcJqFilter :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5985677347477920255##
+                   8607389132969619269##
+                   Data.Hjq.Parser.$trModule
+                   Data.Hjq.Parser.$tcJqFilter1) -}
+d9b8245d63fb04a66b8c427e65472c11
+  $tcJqFilter1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "JqFilter"#) -}
+4c409f32c1da0a9a81c262d5b9c01670
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Hjq.Parser.$trModule2
+                   Data.Hjq.Parser.$trModule1) -}
+7e2242e46cc4fc8d1a6bd3871230489a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Data.Hjq.Parser"#) -}
+334d69e70ab24d955bd45deb52a3ab01
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "hjq-0.1.0.0-HRaK9hMtTPoJCa44FpZvPW"#) -}
+35e3c22fbd9c19bcb8b673da837d1fe1
+  data JqFilter
+    = JqField Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
+    | JqIndex GHC.Types.Int Data.Hjq.Parser.JqFilter
+    | JqNil
+5a7880cb4a7aee45c2b18d31145b4ab4
+  parserJqFilter ::
+    Data.Text.Internal.Text
+    -> Data.Either.Either
+         Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
+  {- Arity: 1, Strictness: <B,A>x,
+     Unfolding: InlineRule (1, True, True)
+                (\ (s :: Data.Text.Internal.Text) ->
+                 Data.Hjq.Parser.parserJqFilter1) -}
+2d93fdea1e352b95e26c5bd36bdb1384
+  parserJqFilter1 ::
+    Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
+  {- Strictness: x -}
+instance [safe] GHC.Classes.Eq [Data.Hjq.Parser.JqFilter]
+  = Data.Hjq.Parser.$fEqJqFilter
+instance [safe] GHC.Read.Read [Data.Hjq.Parser.JqFilter]
+  = Data.Hjq.Parser.$fReadJqFilter
+instance [safe] GHC.Show.Show [Data.Hjq.Parser.JqFilter]
+  = Data.Hjq.Parser.$fShowJqFilter
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
