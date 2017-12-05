@@ -17,9 +17,9 @@ main = do
 jqFilterParserTest :: Test
 jqFilterParserTest = TestList
     [
-        "jqParser test 1" ~: parserJqFilter "." ~?= Right JqNil
-        ,"jqParser test 2" ~: parserJqFilter ".[0]" ~?= Right (JqIndex 0 JqNil)
-        ,"jqParser test 3" ~: parserJqFilter ".fieldName" ~?= Right (JqField "fieldName" JqNil)
-        ,"jqParser test 4" ~: parserJqFilter ".[0].fieldName" ~?= Right (JqIndex 0 (JqField "fieldName" JqNil))
-        ,"jqParser test 5" ~: parserJqFilter ".fieldName[0]" ~?= Right (JqField "fieldName" (JqIndex 0 JqNil))
+        "jqFilterParser test 1" ~: parserJqFilter "." ~?= Right JqNil
+        ,"jqFilterParser test 2" ~: parserJqFilter ".[0]" ~?= Right (JqIndex 0 JqNil)
+        ,"jqFilterParser test 3" ~: parserJqFilter ".fieldName" ~?= Right (JqField "fieldName" JqNil)
+        ,"jqFilterParser test 4" ~: parserJqFilter ".[0].fieldName" ~?= Right (JqIndex 0 (JqField "fieldName" JqNil))
+        ,"jqFilterParser test 5" ~: parserJqFilter ".fieldName[0]" ~?= Right (JqField "fieldName" (JqIndex 0 JqNil))
     ]
