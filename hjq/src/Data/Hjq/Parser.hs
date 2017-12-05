@@ -26,15 +26,19 @@ showParseResult r = Left . pack $ show r
 word :: Parser Text
 word = fmap pack $ many1 (letter <|> char '-' <|> char '_' <|> digit)
 
+--空白をスキップするcharパーサ
+schar :: Char -> Parser Char
+schar c = skipSpace *> char c <* skipSpace
+
 --attoparsecを使ってフィルタの文字列をJqFilter型にパース 
 jqFilterParser :: Parser JqFilter
-jqFilterParser = char '.' >> (jqField <|> jqIndex <|> pure JqNil)
+jqFilterParser = schar '.' >> (jqField <|> jqIndex <|> pure JqNil)
     where 
         jqFilter :: Parser JqFilter
-        jqFilter = (char '.' >>jqField) <|> jqIndex <|> pure JqNil
+        jqFilter = (schar '.' >>jqField) <|> jqIndex <|> pure JqNil
 
         jqField :: Parser JqFilter
-        jqField = JqField <$> word <*> jqFilter
+        jqField = JqField <$> (word <* skipSpace) <*> jqFilter
 
         jqIndex :: Parser JqFilter
-        jqIndex = JqIndex <$> (char '[' *> decimal <* char ']') <*> jqFilter
+        jqIndex = JqIndex <$> (schar '[' *> decimal <* schar ']') <*> jqFilter
