@@ -50,5 +50,22 @@ data JqQuery
     | JqQueryFilter JqFilter
     deriving (Show,Read , Eq)
 
+--パーサ実行
 parseJqQuery :: Text -> Either Text JqQuery
-parseJqQuery s =undefined
+parseJqQuery s =showParseResult $ parse (jqQueryParser <* endOfInput) s `feed` ""
+
+--パーサ本体
+jqQueryParser :: Parser JqQuery
+jqQueryParser = queryArray <|> queryFilter <|> queryObject 
+    where
+        queryArray :: Parser JqQuery
+        queryArray =JqQueryArray <$> (schar '[' *> jqQueryParser `sepBy` (schar ',') <* schar ']')
+
+        queryObject :: Parser JqQuery
+        queryObject = JqQueryObject <$> (schar '{' *> (qObj `sepBy` schar ',') <* schar '}')
+
+        qObj ::Parser (Text,JqQuery)
+        qObj = (,) <$> (schar '"' *> word <* schar '"') <*> (schar ':' *> jqQueryParser)
+
+        queryFilter :: Parser JqQuery
+        queryFilter = JqQueryFilter <$> jqFilterParser

@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-05 10:29:03.4740775 UTC
+2017-12-05 13:36:39.1276775 UTC
 
 interface hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2:Data.Hjq.Parser 8002
-  interface hash: 8988ecb23c2a2fde12c9099b39335bf6
-  ABI hash: 50e9d5253715140327437264f00dffd4
-  export-list hash: e699a568e492cb5ad4cfa14510f2e519
+  interface hash: 56747b5160b67231537252453b8cfa90
+  ABI hash: d7ecd98a39d63ab0aceba82bcb0b8d2b
+  export-list hash: 18d2c3b57ec7cf53b54803d2e632b751
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 0c31806435e24569de867b299395d905
   sig of: Nothing
@@ -13,6 +13,7 @@ interface hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2:Data.Hjq.Parser 8002
   where
 exports:
   Data.Hjq.Parser.jqFilterParser
+  Data.Hjq.Parser.jqQueryParser
   Data.Hjq.Parser.parseJqQuery
   Data.Hjq.Parser.parserJqFilter
   Data.Hjq.Parser.schar
@@ -71,7 +72,6 @@ import  -/  base-4.9.1.0:Control.Applicative 2c56a0c43327cbbcb6e7a55bf05443c9
 import  -/  base-4.9.1.0:Data.Either 186ef9adf6b47e24f39efe9b2e18e352
 import  -/  base-4.9.1.0:Data.Functor 682cc832c233b71cec70179490a08631
 import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
-import  -/  base-4.9.1.0:GHC.Err 20faef8829fd13c027d0ee2213637534
 import  -/  base-4.9.1.0:GHC.Read 823163de9fa29f31f251382abc171b2b
 import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
@@ -740,6 +740,23 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
     -> Data.Attoparsec.Internal.Types.IResult Data.Text.Internal.Text r
   {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U><L,C(C1(C1(C1(U))))>,
      Inline: [0] -}
+5f33f55565ed8498eec89d3e9c3965fb
+  $wjqQueryParser ::
+    Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
+    -> GHC.Prim.Int#
+    -> Data.Attoparsec.Internal.Types.More
+    -> Data.Attoparsec.Internal.Types.Failure
+         Data.Text.Internal.Text
+         (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+         r
+    -> Data.Attoparsec.Internal.Types.Success
+         Data.Text.Internal.Text
+         (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+         Data.Hjq.Parser.JqQuery
+         r
+    -> Data.Attoparsec.Internal.Types.IResult Data.Text.Internal.Text r
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U><L,C(C1(C1(C1(U))))>,
+     Inline: [0] -}
 5ec0e1fb421859c4d092b5e6690cdfd4
   $wmany_v1 ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
@@ -776,6 +793,17 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
+4eda71e1702e3015a4129209c332d3d8
+  $wouter2 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
 1bb3fc4d912c4fa498ad9bdb28fce309
   $wouter3 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
@@ -787,8 +815,19 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-d728ce1703c627b3756b60ab5a32d935
-  $wouter4 ::
+0c74c9aa7b11d7566cbfec89702b8797
+  $wouter6 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+fc41e1db76bc64aa4a217ba0d88ab5dd
+  $wouter7 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
     -> [GHC.Types.Char]
@@ -861,7 +900,7 @@ ea4ed48db1ec818af153b983db33d79f
                          nt3 `cast` (Sym (Data.Attoparsec.Internal.Types.N:Pos[0]))
                          more'1
                          (GHC.Types.: @ GHC.Types.Char a1 a2) }) })) -}
-baff14502e122627e216acabcfc0ca30
+1d0605807c3041c1c309d9abe8b75443
   $wshowParseResult ::
     Data.Attoparsec.Text.Internal.Result a
     -> Data.Either.Either Data.Text.Internal.Text a
@@ -897,10 +936,10 @@ baff14502e122627e216acabcfc0ca30
                                                             GHC.Show.shows6
                                                             (GHC.Show.showLitString
                                                                msg3
-                                                               Data.Hjq.Parser.parserJqFilter2))))) of ww { (#,#) ww1 ww2 ->
+                                                               Data.Hjq.Parser.parseJqQuery2))))) of ww { (#,#) ww1 ww2 ->
                                          GHC.Types.: @ GHC.Types.Char ww1 ww2 }))
                                 Data.Attoparsec.Internal.Types.Partial ds
-                                -> Data.Hjq.Parser.parserJqFilter1 } of dt { DEFAULT ->
+                                -> Data.Hjq.Parser.parseJqQuery1 } of dt { DEFAULT ->
                          case GHC.Magic.runRW#
                                 @ 'GHC.Types.PtrRepLifted
                                 @ Data.Text.Internal.Text
@@ -909,7 +948,7 @@ baff14502e122627e216acabcfc0ca30
                                         @ GHC.Prim.RealWorld
                                         10#
                                         s1 of ds1 { (#,#) ipv ipv1 ->
-                                 Data.Hjq.Parser.$wouter3
+                                 Data.Hjq.Parser.$wouter6
                                    ipv1
                                    4#
                                    dt
@@ -918,7 +957,7 @@ baff14502e122627e216acabcfc0ca30
                          ipv1 } })
                    Data.Attoparsec.Internal.Types.Done ds r
                    -> Data.Either.Right @ Data.Text.Internal.Text @ a r }) -}
-f15659a232eb9f017d5f487ee2e51745
+2f05cc56cab3d842ba353e2c97f11dae
   $wword ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> GHC.Prim.Int#
@@ -972,7 +1011,7 @@ f15659a232eb9f017d5f487ee2e51745
                                       @ GHC.Prim.RealWorld
                                       10#
                                       s1 of ds1 { (#,#) ipv ipv1 ->
-                               Data.Hjq.Parser.$wouter4
+                               Data.Hjq.Parser.$wouter7
                                  ipv1
                                  4#
                                  a1
@@ -1044,20 +1083,251 @@ af92d5392362c3ea2f1c38b746bcf14b
 aa91e584554315e7fbbf8d4259e05423
   jqFilterParser3 :: GHC.Types.Char
   {- HasNoCafRefs, Unfolding: (GHC.Types.C# '.'#) -}
-c801fdbb0913c3ba15242a2c696f728c
+7932213f691c20eca180ed4dcc89d502
+  jqQueryParser ::
+    Data.Attoparsec.Text.Internal.Parser Data.Hjq.Parser.JqQuery
+  {- Arity: 5,
+     Strictness: <L,U><S,1*U(U)><L,U><L,U><L,C(C1(C1(C1(U))))>,
+     Unfolding: InlineRule (0, True, True)
+                Data.Hjq.Parser.jqQueryParser1
+                  `cast`
+                (Sym (Data.Attoparsec.Internal.Types.N:Parser[0]
+                          <Data.Text.Internal.Text>_N <Data.Hjq.Parser.JqQuery>_R)) -}
+1b2e0b43e417f274c0fe2a865b0fcd01
+  jqQueryParser1 ::
+    Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
+    -> Data.Attoparsec.Internal.Types.Pos
+    -> Data.Attoparsec.Internal.Types.More
+    -> Data.Attoparsec.Internal.Types.Failure
+         Data.Text.Internal.Text
+         (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+         r
+    -> Data.Attoparsec.Internal.Types.Success
+         Data.Text.Internal.Text
+         (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+         Data.Hjq.Parser.JqQuery
+         r
+    -> Data.Attoparsec.Internal.Types.IResult Data.Text.Internal.Text r
+  {- Arity: 5,
+     Strictness: <L,U><S,1*U(U)><L,U><L,U><L,C(C1(C1(C1(U))))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ r
+                   (w :: Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+                   (w1 :: Data.Attoparsec.Internal.Types.Pos)
+                   (w2 :: Data.Attoparsec.Internal.Types.More)
+                   (w3 :: Data.Attoparsec.Internal.Types.Failure
+                            Data.Text.Internal.Text
+                            (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+                            r)
+                   (w4 :: Data.Attoparsec.Internal.Types.Success
+                            Data.Text.Internal.Text
+                            (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+                            Data.Hjq.Parser.JqQuery
+                            r) ->
+                 case w1
+                        `cast`
+                      (Data.Attoparsec.Internal.Types.N:Pos[0]) of ww { GHC.Types.I# ww1 ->
+                 Data.Hjq.Parser.$wjqQueryParser @ r w ww1 w2 w3 w4 }) -}
+fbd143171abda69cd2837deee950fcd6
   parseJqQuery ::
     Data.Text.Internal.Text
     -> Data.Either.Either
          Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
-  {- Arity: 1, Strictness: <B,A>x,
-     Unfolding: InlineRule (1, True, True)
-                (\ (s :: Data.Text.Internal.Text) ->
-                 Data.Hjq.Parser.parseJqQuery1) -}
-c8388630d0879053c045f893c6f79e89
-  parseJqQuery1 ::
-    Data.Either.Either Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
-  {- Strictness: x -}
-906943b762ebe53908eb458cdba0a38c
+  {- Arity: 1, Strictness: <L,1*U(U,U,U)>,
+     Unfolding: (\ (s :: Data.Text.Internal.Text) ->
+                 case Data.Hjq.Parser.$wjqQueryParser
+                        @ Data.Hjq.Parser.JqQuery
+                        (Data.Attoparsec.Text.Buffer.buffer s)
+                          `cast`
+                        (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateText[0])))
+                        0#
+                        Data.Attoparsec.Internal.Types.Incomplete
+                        (Data.Attoparsec.Text.Internal.failK @ Data.Hjq.Parser.JqQuery)
+                          `cast`
+                        (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateText[0]))
+                         ->_R <Data.Attoparsec.Internal.Types.Pos
+                               -> Data.Attoparsec.Internal.Types.More
+                               -> [GHC.Base.String]
+                               -> GHC.Base.String
+                               -> Data.Attoparsec.Internal.Types.IResult
+                                    Data.Text.Internal.Text Data.Hjq.Parser.JqQuery>_R)
+                        Data.Hjq.Parser.parseJqQuery3 of wild {
+                   Data.Attoparsec.Internal.Types.Fail t ctxs msg1
+                   -> Data.Either.Left
+                        @ Data.Text.Internal.Text
+                        @ Data.Hjq.Parser.JqQuery
+                        (case GHC.Base.++
+                                @ GHC.Types.Char
+                                Data.Attoparsec.Internal.Types.$fShowIResult5
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   Data.Attoparsec.Internal.Types.$fShowIResult4
+                                   (case Data.Text.Show.$w$cshowsPrec
+                                           (Data.Text.append t Data.Text.Internal.empty_)
+                                           (GHC.Types.:
+                                              @ GHC.Types.Char
+                                              Data.Attoparsec.Internal.Types.$fShowIResult4
+                                              (GHC.Show.showList__
+                                                 @ [GHC.Types.Char]
+                                                 GHC.Show.shows_$cshowList1
+                                                 ctxs
+                                                 (GHC.Types.:
+                                                    @ GHC.Types.Char
+                                                    Data.Attoparsec.Internal.Types.$fShowIResult4
+                                                    (GHC.Types.:
+                                                       @ GHC.Types.Char
+                                                       GHC.Show.shows6
+                                                       (GHC.Show.showLitString
+                                                          msg1
+                                                          Data.Hjq.Parser.parseJqQuery2))))) of ww { (#,#) ww1 ww2 ->
+                                    GHC.Types.: @ GHC.Types.Char ww1 ww2 })) of dt { DEFAULT ->
+                         case GHC.Magic.runRW#
+                                @ 'GHC.Types.PtrRepLifted
+                                @ Data.Text.Internal.Text
+                                (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case GHC.Prim.newByteArray#
+                                        @ GHC.Prim.RealWorld
+                                        10#
+                                        s1 of ds1 { (#,#) ipv ipv1 ->
+                                 Data.Hjq.Parser.$wouter1
+                                   ipv1
+                                   4#
+                                   dt
+                                   0#
+                                   ipv }) of ds1 { (#,#) ipv ipv1 ->
+                         ipv1 } })
+                   Data.Attoparsec.Internal.Types.Partial k
+                   -> case k Data.Text.Internal.empty_ of wild1 {
+                        DEFAULT
+                        -> Data.Either.Left
+                             @ Data.Text.Internal.Text
+                             @ Data.Hjq.Parser.JqQuery
+                             (case case wild1 of wild2 {
+                                     Data.Attoparsec.Internal.Types.Fail t stk msg3
+                                     -> GHC.Base.++
+                                          @ GHC.Types.Char
+                                          Data.Attoparsec.Internal.Types.$fShowIResult5
+                                          (GHC.Types.:
+                                             @ GHC.Types.Char
+                                             Data.Attoparsec.Internal.Types.$fShowIResult4
+                                             (case Data.Text.Show.$w$cshowsPrec
+                                                     t
+                                                     (GHC.Types.:
+                                                        @ GHC.Types.Char
+                                                        Data.Attoparsec.Internal.Types.$fShowIResult4
+                                                        (GHC.Show.showList__
+                                                           @ [GHC.Types.Char]
+                                                           GHC.Show.shows_$cshowList1
+                                                           stk
+                                                           (GHC.Types.:
+                                                              @ GHC.Types.Char
+                                                              Data.Attoparsec.Internal.Types.$fShowIResult4
+                                                              (GHC.Types.:
+                                                                 @ GHC.Types.Char
+                                                                 GHC.Show.shows6
+                                                                 (GHC.Show.showLitString
+                                                                    msg3
+                                                                    Data.Hjq.Parser.parseJqQuery2))))) of ww { (#,#) ww1 ww2 ->
+                                              GHC.Types.: @ GHC.Types.Char ww1 ww2 }))
+                                     Data.Attoparsec.Internal.Types.Partial ds
+                                     -> Data.Hjq.Parser.parseJqQuery1 } of dt { DEFAULT ->
+                              case GHC.Magic.runRW#
+                                     @ 'GHC.Types.PtrRepLifted
+                                     @ Data.Text.Internal.Text
+                                     (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                      case GHC.Prim.newByteArray#
+                                             @ GHC.Prim.RealWorld
+                                             10#
+                                             s1 of ds1 { (#,#) ipv ipv1 ->
+                                      Data.Hjq.Parser.$wouter
+                                        ipv1
+                                        4#
+                                        dt
+                                        0#
+                                        ipv }) of ds1 { (#,#) ipv ipv1 ->
+                              ipv1 } })
+                        Data.Attoparsec.Internal.Types.Done ds r
+                        -> Data.Either.Right
+                             @ Data.Text.Internal.Text
+                             @ Data.Hjq.Parser.JqQuery
+                             r }
+                   Data.Attoparsec.Internal.Types.Done t r1
+                   -> Data.Either.Right
+                        @ Data.Text.Internal.Text
+                        @ Data.Hjq.Parser.JqQuery
+                        r1 }) -}
+df4da6f27a1d548dec6cf409fc7614b6
+  parseJqQuery1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Data.Attoparsec.Internal.Types.$fShowIResult3
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+377e1fc76c9caef28f706c046c70a92c
+  parseJqQuery2 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+d4f25b08e5ce0c5a6cdd97370e820b52
+  parseJqQuery3 ::
+    Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
+    -> Data.Attoparsec.Internal.Types.Pos
+    -> Data.Attoparsec.Internal.Types.More
+    -> Data.Hjq.Parser.JqQuery
+    -> Data.Attoparsec.Internal.Types.IResult
+         Data.Text.Internal.Text Data.Hjq.Parser.JqQuery
+  {- Arity: 4,
+     Unfolding: (\ (t' :: Data.Attoparsec.Internal.Types.State
+                            Data.Text.Internal.Text)
+                   (pos' :: Data.Attoparsec.Internal.Types.Pos)[OneShot]
+                   (more' :: Data.Attoparsec.Internal.Types.More)[OneShot]
+                   (a1 :: Data.Hjq.Parser.JqQuery)[OneShot] ->
+                 case pos'
+                        `cast`
+                      (Data.Attoparsec.Internal.Types.N:Pos[0]) of nt1 { GHC.Types.I# ipv1 ->
+                 case t'
+                        `cast`
+                      (Sub (Data.Attoparsec.Internal.Types.D:R:StateText[0])) of ww { Data.Attoparsec.Text.Buffer.Buf ww1 ww2 ww3 ww4 ww5 ->
+                 Data.Attoparsec.Internal.$w$sendOfInput
+                   @ Data.Hjq.Parser.JqQuery
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ipv1
+                   more'
+                   (Data.Attoparsec.Text.Internal.failK @ Data.Hjq.Parser.JqQuery)
+                     `cast`
+                   (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateText[0]))
+                    ->_R <Data.Attoparsec.Internal.Types.Pos
+                          -> Data.Attoparsec.Internal.Types.More
+                          -> [GHC.Base.String]
+                          -> GHC.Base.String
+                          -> Data.Attoparsec.Internal.Types.IResult
+                               Data.Text.Internal.Text Data.Hjq.Parser.JqQuery>_R)
+                   (\ (t'1 :: Data.Attoparsec.Internal.Types.State
+                                Data.Text.Internal.Text)[OneShot]
+                      (pos'1 :: Data.Attoparsec.Internal.Types.Pos)[OneShot]
+                      (more'1 :: Data.Attoparsec.Internal.Types.More)[OneShot]
+                      (a2 :: ())[OneShot] ->
+                    case pos'1
+                           `cast`
+                         (Data.Attoparsec.Internal.Types.N:Pos[0]) of nt3 { GHC.Types.I# ipv3 ->
+                    Data.Attoparsec.Internal.Types.Done
+                      @ Data.Text.Internal.Text
+                      @ Data.Hjq.Parser.JqQuery
+                      (case t'1
+                              `cast`
+                            (Sub (Data.Attoparsec.Internal.Types.D:R:StateText[0])) of wild { Data.Attoparsec.Text.Buffer.Buf dt dt1 dt2 dt3 dt4 ->
+                       Data.Text.Internal.Text
+                         dt
+                         (GHC.Prim.+# dt1 ipv3)
+                         (GHC.Prim.-# dt2 ipv3) })
+                      a1 }) } }) -}
+bb4fbaaa94a79377915fd61ea009fdcd
   parserJqFilter ::
     Data.Text.Internal.Text
     -> Data.Either.Either
@@ -1080,7 +1350,7 @@ c8388630d0879053c045f893c6f79e89
                                -> GHC.Base.String
                                -> Data.Attoparsec.Internal.Types.IResult
                                     Data.Text.Internal.Text Data.Hjq.Parser.JqFilter>_R)
-                        Data.Hjq.Parser.parserJqFilter3 of wild {
+                        Data.Hjq.Parser.parserJqFilter1 of wild {
                    Data.Attoparsec.Internal.Types.Fail t ctxs msg1
                    -> Data.Either.Left
                         @ Data.Text.Internal.Text
@@ -1108,7 +1378,7 @@ c8388630d0879053c045f893c6f79e89
                                                        GHC.Show.shows6
                                                        (GHC.Show.showLitString
                                                           msg1
-                                                          Data.Hjq.Parser.parserJqFilter2))))) of ww { (#,#) ww1 ww2 ->
+                                                          Data.Hjq.Parser.parseJqQuery2))))) of ww { (#,#) ww1 ww2 ->
                                     GHC.Types.: @ GHC.Types.Char ww1 ww2 })) of dt { DEFAULT ->
                          case GHC.Magic.runRW#
                                 @ 'GHC.Types.PtrRepLifted
@@ -1118,7 +1388,7 @@ c8388630d0879053c045f893c6f79e89
                                         @ GHC.Prim.RealWorld
                                         10#
                                         s1 of ds1 { (#,#) ipv ipv1 ->
-                                 Data.Hjq.Parser.$wouter1
+                                 Data.Hjq.Parser.$wouter3
                                    ipv1
                                    4#
                                    dt
@@ -1156,10 +1426,10 @@ c8388630d0879053c045f893c6f79e89
                                                                  GHC.Show.shows6
                                                                  (GHC.Show.showLitString
                                                                     msg3
-                                                                    Data.Hjq.Parser.parserJqFilter2))))) of ww { (#,#) ww1 ww2 ->
+                                                                    Data.Hjq.Parser.parseJqQuery2))))) of ww { (#,#) ww1 ww2 ->
                                               GHC.Types.: @ GHC.Types.Char ww1 ww2 }))
                                      Data.Attoparsec.Internal.Types.Partial ds
-                                     -> Data.Hjq.Parser.parserJqFilter1 } of dt { DEFAULT ->
+                                     -> Data.Hjq.Parser.parseJqQuery1 } of dt { DEFAULT ->
                               case GHC.Magic.runRW#
                                      @ 'GHC.Types.PtrRepLifted
                                      @ Data.Text.Internal.Text
@@ -1168,7 +1438,7 @@ c8388630d0879053c045f893c6f79e89
                                              @ GHC.Prim.RealWorld
                                              10#
                                              s1 of ds1 { (#,#) ipv ipv1 ->
-                                      Data.Hjq.Parser.$wouter
+                                      Data.Hjq.Parser.$wouter2
                                         ipv1
                                         4#
                                         dt
@@ -1185,21 +1455,8 @@ c8388630d0879053c045f893c6f79e89
                         @ Data.Text.Internal.Text
                         @ Data.Hjq.Parser.JqFilter
                         r1 }) -}
-eb9ae8e68d51f8e639ddce34195969a9
-  parserJqFilter1 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.Base.++
-                   @ GHC.Types.Char
-                   Data.Attoparsec.Internal.Types.$fShowIResult3
-                   (GHC.Types.[] @ GHC.Types.Char)) -}
-3a7cf7261c2b8e04f9ee26d8f0e5812c
-  parserJqFilter2 :: [GHC.Types.Char]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Types.Char
-                   GHC.Show.shows6
-                   (GHC.Types.[] @ GHC.Types.Char)) -}
-c64afeede71890119c8d16617327aea2
-  parserJqFilter3 ::
+c7d4e431f7cbb5565766f9096ddb2dbd
+  parserJqFilter1 ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> Data.Attoparsec.Internal.Types.Pos
     -> Data.Attoparsec.Internal.Types.More
@@ -1260,7 +1517,7 @@ c64afeede71890119c8d16617327aea2
     GHC.Types.Char
     -> Data.Attoparsec.Text.Internal.Parser GHC.Types.Char
   {- Arity: 1, Strictness: <L,U(U)> -}
-63b130dfc8207054abc59bff38109ef8
+1aba67d6d8b973e4a00103caabed678c
   showParseResult ::
     GHC.Show.Show a =>
     Data.Attoparsec.Text.Internal.Result a
@@ -1271,7 +1528,7 @@ c64afeede71890119c8d16617327aea2
                    (w :: GHC.Show.Show a)
                    (w1 :: Data.Attoparsec.Text.Internal.Result a) ->
                  Data.Hjq.Parser.$wshowParseResult @ a w1) -}
-3fc5481beec63c32d68e25213ff8590a
+6072634a0f1c769a494d202c565e84bd
   word ::
     Data.Attoparsec.Text.Internal.Parser Data.Text.Internal.Text
   {- Arity: 5,
@@ -1281,7 +1538,7 @@ c64afeede71890119c8d16617327aea2
                   `cast`
                 (Sym (Data.Attoparsec.Internal.Types.N:Parser[0]
                           <Data.Text.Internal.Text>_N <Data.Text.Internal.Text>_R)) -}
-0fcf364885d379d800f1838aab0976ae
+3ab179bf2f8fe9087bdf9b37b1509a15
   word1 ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> Data.Attoparsec.Internal.Types.Pos
