@@ -11,7 +11,8 @@ main = do
         [ 
             jqFilterParserTest,
             jqFilterParserSpacesTest,
-            jqQueryParserTest
+            jqQueryParserTest,
+            jqQueryParserSpacesTest
         ]
     return ()
 
@@ -46,5 +47,14 @@ jqQueryParserTest = TestList
             Right (JqQueryArray [JqQueryFilter(JqField "hoge" JqNil),JqQueryFilter(JqField "piyo" JqNil)]),
         "jqQueryParser test 3" ~: parseJqQuery "{\"hoge\":[],\"piyo\":[]}" ~?=
              Right (JqQueryObject [("hoge",JqQueryArray []),("piyo",JqQueryArray [])])
+    ]
 
+jqQueryParserSpacesTest :: Test
+jqQueryParserSpacesTest = TestList
+    [
+        "jqQuerySpacesParser test 1" ~: parseJqQuery "  [  ]  " ~?= Right (JqQueryArray []),
+        "jqQuerySpacesParser test 2" ~: parseJqQuery " [  . hoge  ,  .  piyo ] " ~?= 
+            Right (JqQueryArray [JqQueryFilter(JqField "hoge" JqNil),JqQueryFilter(JqField "piyo" JqNil)]),
+        "jqQuerySpacesParser test 3" ~: parseJqQuery " {   \"  hoge  \"  : [   ]  , \" piyo \" : [ ] } " ~?=
+             Right (JqQueryObject [("hoge",JqQueryArray []),("piyo",JqQueryArray [])])
     ]
