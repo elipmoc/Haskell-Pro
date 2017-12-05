@@ -23,6 +23,7 @@ library
                       ,Data.Hjq.Parser
   build-depends:       base >= 4.7 && < 5
                       ,text
+                      ,attoparsec
   default-language:    Haskell2010
 
 executable hjq-exe

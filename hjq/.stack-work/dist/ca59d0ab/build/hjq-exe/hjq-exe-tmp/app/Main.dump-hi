@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-05 06:04:48.3670436 UTC
+2017-12-05 07:00:08.050613 UTC
 
 interface main@main:Main 8002
-  interface hash: 81dd1f95e47ea00d04e85f0472c5fc2b
-  ABI hash: 9a021ca4aa9ea5a4e58a0124df221dcb
-  export-list hash: c754565c33c584c737ffc14a8baa983b
+  interface hash: 8e3ac3e0a204241738e24ed1fe8ca400
+  ABI hash: 229c57648f7df6de285c4bd7cba1fd64
+  export-list hash: bf0e4a5011921b7c0da34318f0369cf5
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 59f79f506803825c6f42855030399c8d
   sig of: Nothing
@@ -15,7 +15,7 @@ exports:
   Main.main
 module dependencies:
 package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
-                      hjq-0.1.0.0@hjq-0.1.0.0-HRaK9hMtTPoJCa44FpZvPW integer-gmp-1.0.0.1
+                      hjq-0.1.0.0@hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2 integer-gmp-1.0.0.1
 orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
 family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
@@ -25,7 +25,7 @@ family instance modules: base-4.9.1.0:Control.Applicative
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
-import  -/  hjq-0.1.0.0@hjq-0.1.0.0-HRaK9hMtTPoJCa44FpZvPW:Lib 2e798c31d5a14f57f0b70f0f4a1b724d
+import  -/  hjq-0.1.0.0@hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2:Lib 36dbbff1487073178ac32047aa21f503
 d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
