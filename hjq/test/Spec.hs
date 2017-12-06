@@ -10,6 +10,7 @@ import Data.Aeson.Lens
 import qualified Data.Vector as V
 import qualified Data.HashMap.Strict as H
 import Test.HUnit
+import Data.Text
 
 main :: IO ()
 main = do
@@ -88,6 +89,11 @@ testData = Object $ H.fromList
         )
     ]
 
+unsafeParserFilter:: Text -> JqFilter
+unsafeParserFilter t = case parserJqFilter t of
+    Right f -> f
+    Left s -> error $ "PARSE FAILURE IN A TEST :" ++ unpack s
+
 --applyFilter関数に文字列のクエリをい与えた結果として、testDataを正しく解釈できるかテスト
 applyFilterTest :: Test
 applyFilterTest = TestList
@@ -107,8 +113,8 @@ applyFilterTest = TestList
             ~?= fmap Right (testData ^? key "array-field" . nth 0),
         "applyFilter test 6" ~: 
             (Just $ applyFilter (unsafeParserFilter ".array-field[1]") testData) 
-            ~?= fmap Right (testData ^? key ".array-field" . nth 1),
+            ~?= fmap Right (testData ^? key "array-field" . nth 1),
         "applyFilter test 7" ~: 
             (Just $ applyFilter (unsafeParserFilter ".array-field[2].object-in-array") testData) 
-            ~?= fmap Right (testData ^? key ".array-field" . nth 2 . key "object-in-array")
+            ~?= fmap Right (testData ^? key "array-field" . nth 2 . key "object-in-array")
     ]

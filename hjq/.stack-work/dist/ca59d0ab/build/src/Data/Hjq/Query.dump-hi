@@ -1,53 +1,81 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-06 08:51:58.3764039 UTC
+2017-12-06 10:29:49.4944878 UTC
 
 interface hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ:Data.Hjq.Query 8002
-  interface hash: dac34cf9a3cb7190c900ecb94f31212a
-  ABI hash: 98c6b32702545e8a130a490261e5a1fc
-  export-list hash: ebe66b6f12b5c25814492b969488a7da
+  interface hash: 50d03a65442919c598e11d7d4fbcf385
+  ABI hash: 5ca633a0eaf695243f3ac89e131bef08
+  export-list hash: c4c3782ee4a0c2002eddb9a58a6ce574
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
-  flag hash: 4754311c2201dfee8aed906fa5514446
+  flag hash: 0c31806435e24569de867b299395d905
   sig of: Nothing
   used TH splices: False
   where
 exports:
   Data.Hjq.Query.applyFilter
-  Data.Hjq.Query.unsafeParserFilter
+  Data.Hjq.Query.noteNotFoundError
+  Data.Hjq.Query.noteOutOfRangeError
+  Data.Hjq.Query.tshow
 module dependencies: Data.Hjq.Parser
-package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+package dependencies: StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
+                      Win32-2.3.1.1@Win32-2.3.1.1
+                      adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp
                       aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1
                       array-0.5.1.1@array-0.5.1.1
                       attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
                       base-4.9.1.0
                       base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw
                       binary-0.8.3.0@binary-0.8.3.0
                       bytestring-0.10.8.1@bytestring-0.10.8.1
+                      call-stack-0.1.0@call-stack-0.1.0-FYVrCPXGP9EGAuTW32963O
+                      comonad-5.0.2@comonad-5.0.2-Fq9Xy9jdx6uIyJZn00E6Yc
                       containers-0.5.7.1@containers-0.5.7.1
+                      contravariant-1.4@contravariant-1.4-29zF0Im431177ovfbHYCGv
                       deepseq-1.4.2.0@deepseq-1.4.2.0
+                      distributive-0.5.3@distributive-0.5.3-IX4kyVcHAyoH4uFYrsjY1R
                       dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      free-4.12.4@free-4.12.4-C2gBQV0m8J42HxqSLTFyVx
                       ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
                       hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
                       integer-gmp-1.0.0.1
                       integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      kan-extensions-5.0.2@kan-extensions-5.0.2-8LTJJ1zQJWB7SfewWXUuqX
+                      lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW
+                      lens-aeson-1.0.2@lens-aeson-1.0.2-43qoalhLTu915Xc2si0fma
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      prelude-extras-0.4.0.3@prelude-extras-0.4.0.3-BhL9U5k7NtGJn1itwIHt2Y
+                      pretty-1.1.3.3@pretty-1.1.3.3
                       primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      profunctors-5.2.1@profunctors-5.2.1-Ga89Nyw0d7LBEIoX4AZ6gT
                       random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4
                       scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      semigroupoids-5.2.1@semigroupoids-5.2.1-Db8txM8kTsI6Y49CY6g5Jn
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
                       tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
                       template-haskell-2.11.1.0
                       text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-abstraction-0.2.6.0@th-abstraction-0.2.6.0-HRFJgpoqs5HJ5LgHnjmMhQ
                       time-1.6.0.1@time-1.6.0.1
                       time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
                       transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-IuFogs8HAVUJBWVNMhtssu
                       unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
                       uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
                       vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
 orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
          attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
          base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
          binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
          bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
          hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         lens-aeson-1.0.2@lens-aeson-1.0.2-43qoalhLTu915Xc2si0fma:Data.Aeson.Lens
+         reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4:Data.Reflection
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
@@ -57,7 +85,8 @@ orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Att
          transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
-family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:Data.Functor.Rep
+                         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
                          base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
                          base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
                          base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
@@ -67,6 +96,16 @@ family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE
                          base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
                          base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
                          base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Biff
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Clown
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Fix
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Flip
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Join
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Joker
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Product
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Sum
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Tannen
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Wrapped
                          containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
                          containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
                          containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
@@ -74,12 +113,25 @@ family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE
                          containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
                          dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
                          ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         kan-extensions-5.0.2@kan-extensions-5.0.2-8LTJJ1zQJWB7SfewWXUuqX:Data.Functor.Day
+                         kan-extensions-5.0.2@kan-extensions-5.0.2-8LTJJ1zQJWB7SfewWXUuqX:Data.Functor.Yoneda
+                         lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens.At
+                         lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens.Internal.Indexed
+                         lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens.Reified
+                         lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens.Tuple
+                         lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens.Wrapped
+                         lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens.Zoom
+                         lens-aeson-1.0.2@lens-aeson-1.0.2-43qoalhLTu915Xc2si0fma:Data.Aeson.Lens
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
                          primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
                          primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         profunctors-5.2.1@profunctors-5.2.1-Ga89Nyw0d7LBEIoX4AZ6gT:Data.Profunctor.Rep
                          tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
                          template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-abstraction-0.2.6.0@th-abstraction-0.2.6.0-HRFJgpoqs5HJ5LgHnjmMhQ:Language.Haskell.TH.Datatype
                          unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
                          unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
                          uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
@@ -91,12 +143,21 @@ family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE
                          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson 2c2ea416ea3f3f7ead4fbc7d22c60646
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson.Types.Internal c2b7e48c55f4f3192a35e330eb07e54f
+import  -/  base-4.9.1.0:Control.Monad f915f187cea611986ebb12dbc69279ab
 import  -/  base-4.9.1.0:Data.Either 186ef9adf6b47e24f39efe9b2e18e352
-import  -/  base-4.9.1.0:GHC.Err 20faef8829fd13c027d0ee2213637534
+import  -/  base-4.9.1.0:Data.Monoid 57d0116342e60080b20e7d5f9e1248f9
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  Data.Hjq.Parser 543bcd70f4a83971496feb0a88d92cdd
   exports: a32aaa67aad4ec06867b3196813d626e
+  JqField 93eeccdfc68da86bb60d2fc808020bd3
   JqFilter 91ed5df3c5d0d5dd05c8b59fadb00e80
+  JqIndex 5a032276f630838149de64c233261d03
+  JqNil 3acaa3ca6b2bd93a69769730267bdaca
+import  -/  lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens 51c282815697462fb4c0814abcb89573
+import  -/  lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens.Fold 85b72028b5edba38936404deb33bd848
+import  -/  lens-aeson-1.0.2@lens-aeson-1.0.2-43qoalhLTu915Xc2si0fma:Data.Aeson.Lens b8384305855d57f93f92a431497fbcef
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text 60ee6e2213faa3c3f5680c74ec6dedf8
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 95940720afdbe18ada37ea3a0ad8c1a0
 c3c273d2b8efade7b1b2335c82561f0c
@@ -114,17 +175,131 @@ c3c273d2b8efade7b1b2335c82561f0c
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ"#) -}
-d164fa036fa09a8a4c4ec49c34c50a3a
+7203db4623e523f9d2c65c44bf7de949
+  $w$slookup ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.HashMap.Base.HashMap Data.Text.Internal.Text v
+    -> GHC.Base.Maybe v
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,U><S,U><S,U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ v
+                   (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (w :: Data.HashMap.Base.HashMap Data.Text.Internal.Text v) ->
+                 case {__pkg_ccall hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol hashable_fnv_hash_offset GHC.Prim.ByteArray#
+                                                                                                                     -> GHC.Prim.Int#
+                                                                                                                     -> GHC.Prim.Int#
+                                                                                                                     -> GHC.Prim.Int#
+                                                                                                                     -> GHC.Prim.State#
+                                                                                                                          GHC.Prim.RealWorld
+                                                                                                                     -> (# GHC.Prim.State#
+                                                                                                                             GHC.Prim.RealWorld,
+                                                                                                                           GHC.Prim.Int# #)}
+                        ww
+                        (GHC.Prim.narrow32Int# (GHC.Prim.uncheckedIShiftL# ww1 1#))
+                        (GHC.Prim.narrow32Int# (GHC.Prim.uncheckedIShiftL# ww2 1#))
+                        1534328996#
+                        GHC.Prim.realWorld# of wild1 { (#,#) ds1 ds2 ->
+                 Data.Hjq.Query.$wpoly_go3
+                   @ v
+                   (GHC.Prim.int2Word# (GHC.Prim.narrow32Int# ds2))
+                   ww
+                   ww1
+                   ww2
+                   0#
+                   w }) -}
+f0215e0cdb67c8f0ec55d5a951d4638c
+  $wouter3 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+adc3a81fc4fd2d0cfeecf845d33d0d4b
+  $wpoly_go1 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array#
+         (Data.HashMap.Base.Leaf Data.Text.Internal.Text v)
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Base.Maybe v
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U><L,U><L,U><S,U><S,U><S,U>, Inline: [0] -}
+aba0addc4415c7cc4bf04a5a45baac82
+  $wpoly_go3 ::
+    GHC.Prim.Word#
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.HashMap.Base.HashMap Data.Text.Internal.Text v
+    -> GHC.Base.Maybe v
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U>, Inline: [0] -}
+06cb3fd229ed24277025b7e2a505c616
   applyFilter ::
     Data.Hjq.Parser.JqFilter
     -> Data.Aeson.Types.Internal.Value
     -> Data.Either.Either
          Data.Text.Internal.Text Data.Aeson.Types.Internal.Value
-  {- Strictness: x -}
-4fefced3013b4d6db884dfec1e87d8f0
-  unsafeParserFilter ::
-    Data.Text.Internal.Text -> Data.Hjq.Parser.JqFilter
-  {- Strictness: x -}
+  {- Arity: 2, Strictness: <S,U><L,U> -}
+ef08494cfa63f4ce285ce3f5201f0bc0
+  noteNotFoundError ::
+    Data.Text.Internal.Text
+    -> GHC.Base.Maybe a -> Data.Either.Either Data.Text.Internal.Text a
+  {- Arity: 2, Strictness: <L,1*U(U,U,U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (ds :: Data.Text.Internal.Text) (ds1 :: GHC.Base.Maybe a) ->
+                 case ds1 of wild {
+                   GHC.Base.Nothing
+                   -> Data.Either.Left
+                        @ Data.Text.Internal.Text
+                        @ a
+                        (Data.Text.Internal.Fusion.unstream
+                           (Data.Text.Internal.Fusion.Common.append
+                              (Data.Text.Internal.Fusion.stream
+                                 Data.Hjq.Query.noteNotFoundError1)
+                              (Data.Text.Internal.Fusion.stream ds)))
+                   GHC.Base.Just x
+                   -> Data.Either.Right @ Data.Text.Internal.Text @ a x }) -}
+522cab5f3ea9c4081ff2af7aaff053af
+  noteNotFoundError1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "field name not found"#) -}
+0d969e8d37226f34d0a22d1e97e7fa3d
+  noteOutOfRangeError ::
+    GHC.Types.Int
+    -> GHC.Base.Maybe a -> Data.Either.Either Data.Text.Internal.Text a
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+a841d3a60039912487586808d6f1c0dd
+  tshow :: GHC.Show.Show a => a -> Data.Text.Internal.Text
+  {- Arity: 2, Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,U>,
+     Unfolding: (\ @ a ($dShow :: GHC.Show.Show a) (eta :: a) ->
+                 case GHC.Show.show @ a $dShow eta of dt { DEFAULT ->
+                 case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                10#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         Data.Hjq.Query.$wouter3
+                           ipv1
+                           4#
+                           dt
+                           0#
+                           ipv }) of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 } }) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
