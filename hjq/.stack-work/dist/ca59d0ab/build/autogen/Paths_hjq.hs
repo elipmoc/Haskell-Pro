@@ -30,7 +30,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "C:\\Users\\elipmoc\\Source\\Repos2\\Haskell-Pro\\hjq\\.stack-work\\install\\fab39206\\bin"
-libdir     = "C:\\Users\\elipmoc\\Source\\Repos2\\Haskell-Pro\\hjq\\.stack-work\\install\\fab39206\\lib\\x86_64-windows-ghc-8.0.2\\hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2"
+libdir     = "C:\\Users\\elipmoc\\Source\\Repos2\\Haskell-Pro\\hjq\\.stack-work\\install\\fab39206\\lib\\x86_64-windows-ghc-8.0.2\\hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ"
 dynlibdir  = "C:\\Users\\elipmoc\\Source\\Repos2\\Haskell-Pro\\hjq\\.stack-work\\install\\fab39206\\lib\\x86_64-windows-ghc-8.0.2"
 datadir    = "C:\\Users\\elipmoc\\Source\\Repos2\\Haskell-Pro\\hjq\\.stack-work\\install\\fab39206\\share\\x86_64-windows-ghc-8.0.2\\hjq-0.1.0.0"
 libexecdir = "C:\\Users\\elipmoc\\Source\\Repos2\\Haskell-Pro\\hjq\\.stack-work\\install\\fab39206\\libexec"

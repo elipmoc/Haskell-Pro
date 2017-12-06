@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-05 06:56:24.985421 UTC
+2017-12-06 08:37:24.3098291 UTC
 
-interface hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2:Lib 8002
-  interface hash: 6e483ac80437c946d22e01372ccea998
-  ABI hash: 36dbbff1487073178ac32047aa21f503
+interface hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ:Lib 8002
+  interface hash: a10cbbc6ab6e7528b1a8a612c6e71292
+  ABI hash: a18e94da54b98f6ad460d439ad7e649a
   export-list hash: 1e51e1ca10f94a1b3ad5308e659c77d6
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 42cac3df44012bdb58b31800b472865d
@@ -22,19 +22,19 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
-c9b7e141cc3804e36cf98534928340b2
+36c7bb607ec459769e9ab031fcb18e17
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
-17e9f774bf347471d85e5fdd932a7daf
+5e584b050f9e0484013cb15cf55888ab
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Lib"#) -}
-754c8b8dd16e153972706cab6ac18e49
+175d55c54d7d98efb3ce356f809b9875
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2"#) -}
+                   "hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ"#) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

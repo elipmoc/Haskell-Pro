@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-05 13:36:39.1276775 UTC
+2017-12-06 08:37:25.3954925 UTC
 
-interface hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2:Data.Hjq.Parser 8002
-  interface hash: 56747b5160b67231537252453b8cfa90
-  ABI hash: d7ecd98a39d63ab0aceba82bcb0b8d2b
-  export-list hash: 18d2c3b57ec7cf53b54803d2e632b751
+interface hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ:Data.Hjq.Parser 8002
+  interface hash: 4623d0ca12c423e83fbbab3456d165d0
+  ABI hash: 543bcd70f4a83971496feb0a88d92cdd
+  export-list hash: a32aaa67aad4ec06867b3196813d626e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 0c31806435e24569de867b299395d905
   sig of: Nothing
@@ -80,7 +80,7 @@ import  -/  base-4.9.1.0:Text.Read.Lex a861691fe58d2d0a125f55a5ebadf631
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text 60ee6e2213faa3c3f5680c74ec6dedf8
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 95940720afdbe18ada37ea3a0ad8c1a0
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fEqJqFilter :: GHC.Classes.Eq Data.Hjq.Parser.JqFilter
   DFunId
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -88,7 +88,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                   @ Data.Hjq.Parser.JqFilter
                   Data.Hjq.Parser.$fEqJqFilter_$c==
                   Data.Hjq.Parser.$fEqJqFilter_$c/= -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fEqJqFilter_$c/= ::
     Data.Hjq.Parser.JqFilter
     -> Data.Hjq.Parser.JqFilter -> GHC.Types.Bool
@@ -99,12 +99,12 @@ af92d5392362c3ea2f1c38b746bcf14b
                  case Data.Hjq.Parser.$fEqJqFilter_$c== a b of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fEqJqFilter_$c== ::
     Data.Hjq.Parser.JqFilter
     -> Data.Hjq.Parser.JqFilter -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fEqJqQuery :: GHC.Classes.Eq Data.Hjq.Parser.JqQuery
   DFunId
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -112,7 +112,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                   @ Data.Hjq.Parser.JqQuery
                   Data.Hjq.Parser.$fEqJqQuery_$c==
                   Data.Hjq.Parser.$fEqJqQuery_$c/= -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fEqJqQuery_$c/= ::
     Data.Hjq.Parser.JqQuery
     -> Data.Hjq.Parser.JqQuery -> GHC.Types.Bool
@@ -122,12 +122,12 @@ af92d5392362c3ea2f1c38b746bcf14b
                  case Data.Hjq.Parser.$fEqJqQuery_$c== a b of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fEqJqQuery_$c== ::
     Data.Hjq.Parser.JqQuery
     -> Data.Hjq.Parser.JqQuery -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fReadJqFilter :: GHC.Read.Read Data.Hjq.Parser.JqFilter
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -137,7 +137,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                   Data.Hjq.Parser.$fReadJqFilter_$creadList
                   Data.Hjq.Parser.$fReadJqFilter_$creadPrec
                   Data.Hjq.Parser.$fReadJqFilter_$creadListPrec -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fReadJqFilter1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -158,7 +158,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                    eta
                    @ b
                    eta1) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fReadJqFilter2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP Data.Hjq.Parser.JqFilter
@@ -173,14 +173,14 @@ af92d5392362c3ea2f1c38b746bcf14b
                                        <Data.Hjq.Parser.JqFilter>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                   <Data.Hjq.Parser.JqFilter>_R)))) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fReadJqFilter3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (Data.Hjq.Parser.JqFilter -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <L,1*U(U)><L,C(U)> -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fReadJqFilter4 ::
     Text.ParserCombinators.ReadP.P [Data.Hjq.Parser.JqFilter]
   {- Unfolding: (GHC.Read.list1
@@ -193,14 +193,14 @@ af92d5392362c3ea2f1c38b746bcf14b
                    @ [Data.Hjq.Parser.JqFilter]
                    (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                       @ [Data.Hjq.Parser.JqFilter])) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fReadJqFilter_$creadList ::
     Text.ParserCombinators.ReadP.ReadS [Data.Hjq.Parser.JqFilter]
   {- Arity: 1,
      Unfolding: (Text.ParserCombinators.ReadP.run
                    @ [Data.Hjq.Parser.JqFilter]
                    Data.Hjq.Parser.$fReadJqFilter4) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fReadJqFilter_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [Data.Hjq.Parser.JqFilter]
   {- Arity: 2, Strictness: <L,U><L,U>,
@@ -213,7 +213,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                                     <[Data.Hjq.Parser.JqFilter]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                <[Data.Hjq.Parser.JqFilter]>_R))) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fReadJqFilter_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec Data.Hjq.Parser.JqFilter
   {- Arity: 1,
@@ -222,7 +222,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                           <Data.Hjq.Parser.JqFilter>_R)) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fReadJqFilter_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS Data.Hjq.Parser.JqFilter
@@ -248,7 +248,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                       @ Data.Hjq.Parser.JqFilter
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                          @ Data.Hjq.Parser.JqFilter))) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fReadJqQuery :: GHC.Read.Read Data.Hjq.Parser.JqQuery
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -258,7 +258,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                   Data.Hjq.Parser.$fReadJqQuery_$creadList
                   Data.Hjq.Parser.$fReadJqQuery_$creadPrec
                   Data.Hjq.Parser.$fReadJqQuery_$creadListPrec -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fReadJqQuery1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -279,7 +279,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                    eta
                    @ b
                    eta1) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fReadJqQuery2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP Data.Hjq.Parser.JqQuery
@@ -294,7 +294,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                                        <Data.Hjq.Parser.JqQuery>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                   <Data.Hjq.Parser.JqQuery>_R)))) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fReadJqQuery3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -308,7 +308,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                           -> Text.ParserCombinators.ReadP.P b) ->
                  case w of ww { GHC.Types.I# ww1 ->
                  Data.Hjq.Parser.$w$creadPrec ww1 @ b w1 }) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fReadJqQuery4 ::
     Text.ParserCombinators.ReadP.P [Data.Hjq.Parser.JqQuery]
   {- Unfolding: (GHC.Read.list1
@@ -321,14 +321,14 @@ af92d5392362c3ea2f1c38b746bcf14b
                    @ [Data.Hjq.Parser.JqQuery]
                    (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                       @ [Data.Hjq.Parser.JqQuery])) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fReadJqQuery_$creadList ::
     Text.ParserCombinators.ReadP.ReadS [Data.Hjq.Parser.JqQuery]
   {- Arity: 1,
      Unfolding: (Text.ParserCombinators.ReadP.run
                    @ [Data.Hjq.Parser.JqQuery]
                    Data.Hjq.Parser.$fReadJqQuery4) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fReadJqQuery_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [Data.Hjq.Parser.JqQuery]
   {- Arity: 2, Strictness: <L,U><L,U>,
@@ -341,7 +341,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                                     <[Data.Hjq.Parser.JqQuery]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                <[Data.Hjq.Parser.JqQuery]>_R))) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fReadJqQuery_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec Data.Hjq.Parser.JqQuery
   {- Arity: 1,
@@ -350,7 +350,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                           <Data.Hjq.Parser.JqQuery>_R)) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fReadJqQuery_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS Data.Hjq.Parser.JqQuery
@@ -376,7 +376,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                       @ Data.Hjq.Parser.JqQuery
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                          @ Data.Hjq.Parser.JqQuery))) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fShowJqFilter :: GHC.Show.Show Data.Hjq.Parser.JqFilter
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -385,15 +385,15 @@ af92d5392362c3ea2f1c38b746bcf14b
                   Data.Hjq.Parser.$fShowJqFilter_$cshowsPrec
                   Data.Hjq.Parser.$fShowJqFilter_$cshow
                   Data.Hjq.Parser.$fShowJqFilter_$cshowList -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fShowJqFilter1 :: Data.Hjq.Parser.JqFilter -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (Data.Hjq.Parser.$fShowJqFilter_$cshowsPrec
                    Data.Hjq.Parser.$fShowJqFilter2) -}
-c0803f9390a86335324dacf16c1fbb4d
+2baeea60517cd5f7ed4bd6e4792d1f5b
   $fShowJqFilter2 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fShowJqFilter_$cshow ::
     Data.Hjq.Parser.JqFilter -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
@@ -403,18 +403,18 @@ af92d5392362c3ea2f1c38b746bcf14b
                    GHC.Show.shows22
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fShowJqFilter_$cshowList ::
     [Data.Hjq.Parser.JqFilter] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Data.Hjq.Parser.JqFilter
                    Data.Hjq.Parser.$fShowJqFilter1) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   $fShowJqFilter_$cshowsPrec ::
     GHC.Types.Int -> Data.Hjq.Parser.JqFilter -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fShowJqQuery :: GHC.Show.Show Data.Hjq.Parser.JqQuery
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -423,13 +423,13 @@ af92d5392362c3ea2f1c38b746bcf14b
                   Data.Hjq.Parser.$fShowJqQuery_$cshowsPrec
                   Data.Hjq.Parser.$fShowJqQuery_$cshow
                   Data.Hjq.Parser.$fShowJqQuery_$cshowList -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fShowJqQuery1 :: Data.Hjq.Parser.JqQuery -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (\ (w :: Data.Hjq.Parser.JqQuery)
                    (w1 :: GHC.Base.String) ->
                  Data.Hjq.Parser.$w$cshowsPrec 0# w w1) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fShowJqQuery_$cshow :: Data.Hjq.Parser.JqQuery -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -438,14 +438,14 @@ af92d5392362c3ea2f1c38b746bcf14b
                    GHC.Show.shows22
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fShowJqQuery_$cshowList ::
     [Data.Hjq.Parser.JqQuery] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Data.Hjq.Parser.JqQuery
                    Data.Hjq.Parser.$fShowJqQuery1) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $fShowJqQuery_$cshowsPrec ::
     GHC.Types.Int -> Data.Hjq.Parser.JqQuery -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>,
@@ -456,7 +456,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                    (w2 :: GHC.Base.String) ->
                  case w of ww { GHC.Types.I# ww1 ->
                  Data.Hjq.Parser.$w$cshowsPrec ww1 w1 w2 }) -}
-5c4163bac2d24254e37111eb5680b92a
+472f83c976df4e053454cc199227317f
   $s$fEq(,) ::
     GHC.Classes.Eq (Data.Text.Internal.Text, Data.Hjq.Parser.JqQuery)
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -472,130 +472,130 @@ af92d5392362c3ea2f1c38b746bcf14b
                      @ Data.Hjq.Parser.JqQuery
                      Data.Text.$fEqText
                      Data.Hjq.Parser.$fEqJqQuery) -}
-8ed54bfd28007043c9b75c0e4346a574
+901a1d6f0fcb67a170b9216f907b54f1
   $tc'JqField :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   10176591500155545379##
-                   11442063685723720206##
+                   10259201854162254962##
+                   5313253991908855615##
                    Data.Hjq.Parser.$trModule
                    Data.Hjq.Parser.$tc'JqField1) -}
-c92a54911c48fdf1dec19113ae0c7064
+adc45adf7f055be49a52ff7907f1840b
   $tc'JqField1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'JqField"#) -}
-a71929265c8c3767dd99b46d3ea0572d
+7b45fad1e92d46474e092b5220407dc4
   $tc'JqIndex :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   5095841594733641182##
-                   10391299334900171615##
+                   836767976048548730##
+                   12603636665711090312##
                    Data.Hjq.Parser.$trModule
                    Data.Hjq.Parser.$tc'JqIndex1) -}
-8cd39cf233532cd80a7fd3d86b9f6eea
+f2bf1397fe3967b1bf2cde60ebb56b76
   $tc'JqIndex1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'JqIndex"#) -}
-de89890d917d789b2b02399475996241
+fd75607885ed6490f2e7e03497853b07
   $tc'JqNil :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   1149377422055448726##
-                   18252739854883219834##
+                   10041393576983896007##
+                   8618060062613821757##
                    Data.Hjq.Parser.$trModule
                    Data.Hjq.Parser.$tc'JqNil1) -}
-f39a2f808f66bd3eb46432816eb99492
+1373f1407c24764112332fd639623e26
   $tc'JqNil1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'JqNil"#) -}
-ce39dfe18f695c9341742c313b36b7c2
+52d44d46f13e787e5487420c13f64474
   $tc'JqQueryArray :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   3108674276333818111##
-                   14901892661875712630##
+                   1831990090592476945##
+                   10450375722976916757##
                    Data.Hjq.Parser.$trModule
                    Data.Hjq.Parser.$tc'JqQueryArray1) -}
-22f87698678d5945f66527ab728e2993
+af5eca68bbe3ac6c0249a3f295a82ba8
   $tc'JqQueryArray1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'JqQueryArray"#) -}
-dd8832af9c1ddf361d2d76629dcff626
+996486ab30b3db8e0f7041447919a7b4
   $tc'JqQueryFilter :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   5129601630907438681##
-                   12506366279835633291##
+                   998143944228144743##
+                   16605411955045126592##
                    Data.Hjq.Parser.$trModule
                    Data.Hjq.Parser.$tc'JqQueryFilter1) -}
-20a7062451c85399bc289929fb788a0d
+401c78ed38d23205d43a5c42b4e74cfb
   $tc'JqQueryFilter1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'JqQueryFilter"#) -}
-9ab9aad2b3e1a6461c4130989ff9794a
+da9bc5e34c082dd46236d03de2fdbdc8
   $tc'JqQueryObject :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   17060034053653844225##
-                   13964291742258671892##
+                   6137944836573468523##
+                   10106933028099504874##
                    Data.Hjq.Parser.$trModule
                    Data.Hjq.Parser.$tc'JqQueryObject1) -}
-1d1195e4f0347948bcf459d2d253116d
+423d5782f8a3a9e6f7c1d01a7bc39c1e
   $tc'JqQueryObject1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'JqQueryObject"#) -}
-dc87a066a9b84b18cf7569084bd5ef3e
+595e5ee6ee7d5074c2e410fd6aaf4b7f
   $tcJqFilter :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   9729879430461000217##
-                   443160406806671867##
+                   9327384279147675999##
+                   9328926179330236038##
                    Data.Hjq.Parser.$trModule
                    Data.Hjq.Parser.$tcJqFilter1) -}
-8e15f2afb9921ae70c4511bbd0bdba36
+1897e53c8ecb23b5085413871692c5f8
   $tcJqFilter1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "JqFilter"#) -}
-eb672e75697c06202253f2590940d1bd
+eee15bea8e443a872383ee5e19837360
   $tcJqQuery :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   6043800951114893431##
-                   18102584169024649296##
+                   5721233651080685344##
+                   3168311649126804086##
                    Data.Hjq.Parser.$trModule
                    Data.Hjq.Parser.$tcJqQuery1) -}
-2670dd07bf398985621ec045700f0e91
+6456db41a4460cc5179c727a93827b0d
   $tcJqQuery1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "JqQuery"#) -}
-a7571c44fd22eace2b73b35729e905fe
+08f5cc81cb91b059190013c1b9878e0c
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Data.Hjq.Parser.$trModule2
                    Data.Hjq.Parser.$trModule1) -}
-d0dc113ad28bcfe78ead751d0c371851
+6bca6e3ceb265e95e19f1e87f5dde415
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Data.Hjq.Parser"#) -}
-006213421c4bb048eba37ec217bd62be
+3c3074d7ceeb69dc7a1f04982657ee4c
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "hjq-0.1.0.0-I1fYZknv1CrBp9KXtqZVa2"#) -}
-9bf12e78b72ed2158c84411f3b1bcadc
+                   "hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ"#) -}
+b0c894d025d6aa861884faff438c25ec
   $w$creadPrec ::
     GHC.Prim.Int#
     -> forall b.
        (Data.Hjq.Parser.JqQuery -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <S,U><L,C(U)>, Inline: [0] -}
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   $w$cshowsPrec ::
     GHC.Prim.Int#
     -> Data.Hjq.Parser.JqQuery -> GHC.Base.String -> GHC.Base.String
   {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [0] -}
-c684f84e2eefd19277c84d306938b121
+c9718539327e08b66a2198f265cbbba6
   $weta ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> GHC.Prim.Int#
@@ -613,7 +613,7 @@ c684f84e2eefd19277c84d306938b121
   {- Arity: 5,
      Strictness: <L,U(U,U,U,U,U)><S,U><L,U><L,C(C1(C1(C1(C1(U)))))><L,C(C1(C1(C1(U))))>,
      Inline: [0] -}
-a234e59890995b9e8aa2985538995104
+debbda65f82940bab1e2c0d7fe918565
   $wjqField ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> GHC.Prim.Int#
@@ -631,7 +631,7 @@ a234e59890995b9e8aa2985538995104
   {- Arity: 5,
      Strictness: <L,U(U,U,U,U,U)><S,U><L,U><L,C(C1(C1(C1(C1(U)))))><L,C(C1(C1(C1(U))))>,
      Inline: [0] -}
-98ea7ecbe2f3f2b8a81854346bbce747
+783642fed21ebd56d1280f38132d30c0
   $wjqFilterParser ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> GHC.Prim.Int#
@@ -723,7 +723,7 @@ a234e59890995b9e8aa2985538995104
                          (_msg :: GHC.Base.String)[OneShot] ->
                        Data.Hjq.Parser.$wjqIndex @ r t'1 ww2 more'1 lose w3)
                       w3 })) -}
-cdc85d37a8aa3d4d655ef352a81bfcd9
+5e8c9e3f7926aa5d3ea8f2f833cf44d0
   $wjqIndex ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> GHC.Prim.Int#
@@ -740,7 +740,7 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
     -> Data.Attoparsec.Internal.Types.IResult Data.Text.Internal.Text r
   {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U><L,C(C1(C1(C1(U))))>,
      Inline: [0] -}
-5f33f55565ed8498eec89d3e9c3965fb
+cc83f7001e7554de2fd8bb532b79e6c8
   $wjqQueryParser ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> GHC.Prim.Int#
@@ -757,7 +757,7 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
     -> Data.Attoparsec.Internal.Types.IResult Data.Text.Internal.Text r
   {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U><L,C(C1(C1(C1(U))))>,
      Inline: [0] -}
-5ec0e1fb421859c4d092b5e6690cdfd4
+213ec0170239ebcd7bb4a2af47f0c9e9
   $wmany_v1 ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> GHC.Prim.Int#
@@ -771,7 +771,7 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
   {- Arity: 4,
      Strictness: <L,U(U,U,U,U,U)><S,U><L,U><L,C(C1(C1(C1(U))))>,
      Inline: [0] -}
-6cb6e699a5498313009beded93f0e388
+f3702fb87182fc2dda6d12afe6295cce
   $wouter ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
@@ -782,7 +782,7 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-35f9d83cbc27cd1b405ccfc1ea1e063f
+433bc1ed6d589477c9c1d05ee6c0928b
   $wouter1 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
@@ -793,7 +793,7 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-4eda71e1702e3015a4129209c332d3d8
+9482e91109217c09263cf59df5b3fa1f
   $wouter2 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
@@ -804,7 +804,7 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-1bb3fc4d912c4fa498ad9bdb28fce309
+bb1426cd4fb20aecc70d21d0a04abf61
   $wouter3 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
@@ -815,7 +815,7 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-0c74c9aa7b11d7566cbfec89702b8797
+f9ed63859f2b57b13f5d3e00b4cb5a8b
   $wouter6 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
@@ -826,7 +826,7 @@ cdc85d37a8aa3d4d655ef352a81bfcd9
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-fc41e1db76bc64aa4a217ba0d88ab5dd
+6017f9cda41d0421c736f5bb95be77ab
   $wouter7 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
@@ -837,7 +837,7 @@ fc41e1db76bc64aa4a217ba0d88ab5dd
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-ea4ed48db1ec818af153b983db33d79f
+f5c3a98f6eccab388f55fc11c32842cd
   $wp ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> GHC.Prim.Int#
@@ -900,7 +900,7 @@ ea4ed48db1ec818af153b983db33d79f
                          nt3 `cast` (Sym (Data.Attoparsec.Internal.Types.N:Pos[0]))
                          more'1
                          (GHC.Types.: @ GHC.Types.Char a1 a2) }) })) -}
-1d0605807c3041c1c309d9abe8b75443
+ab50211758dfa72751a70974b46ff4a9
   $wshowParseResult ::
     Data.Attoparsec.Text.Internal.Result a
     -> Data.Either.Either Data.Text.Internal.Text a
@@ -957,7 +957,7 @@ ea4ed48db1ec818af153b983db33d79f
                          ipv1 } })
                    Data.Attoparsec.Internal.Types.Done ds r
                    -> Data.Either.Right @ Data.Text.Internal.Text @ a r }) -}
-2f05cc56cab3d842ba353e2c97f11dae
+b44f45d63a5b045e76f0d9ca3e02be84
   $wword ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> GHC.Prim.Int#
@@ -1018,18 +1018,18 @@ ea4ed48db1ec818af153b983db33d79f
                                  0#
                                  ipv }) of ds1 { (#,#) ipv ipv1 ->
                        ipv1 }))) -}
-af92d5392362c3ea2f1c38b746bcf14b
+91ed5df3c5d0d5dd05c8b59fadb00e80
   data JqFilter
     = JqField Data.Text.Internal.Text Data.Hjq.Parser.JqFilter
     | JqIndex GHC.Types.Int Data.Hjq.Parser.JqFilter
     | JqNil
-9bf12e78b72ed2158c84411f3b1bcadc
+b0c894d025d6aa861884faff438c25ec
   data JqQuery
     = JqQueryObject [(Data.Text.Internal.Text,
                       Data.Hjq.Parser.JqQuery)]
     | JqQueryArray [Data.Hjq.Parser.JqQuery]
     | JqQueryFilter Data.Hjq.Parser.JqFilter
-56c72f85a002ce84e729b6e4c6d46ca7
+473be48e8c2952ce64d76e95379ffd45
   jqFilterParser ::
     Data.Attoparsec.Text.Internal.Parser Data.Hjq.Parser.JqFilter
   {- Arity: 5,
@@ -1039,7 +1039,7 @@ af92d5392362c3ea2f1c38b746bcf14b
                   `cast`
                 (Sym (Data.Attoparsec.Internal.Types.N:Parser[0]
                           <Data.Text.Internal.Text>_N <Data.Hjq.Parser.JqFilter>_R)) -}
-5ccdbaf7bedf7ec6c310376a404d5053
+861d5e4784e5404431ba9ac81cc86b3a
   jqFilterParser1 ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> Data.Attoparsec.Internal.Types.Pos
@@ -1075,15 +1075,15 @@ af92d5392362c3ea2f1c38b746bcf14b
                         `cast`
                       (Data.Attoparsec.Internal.Types.N:Pos[0]) of ww { GHC.Types.I# ww1 ->
                  Data.Hjq.Parser.$wjqFilterParser @ r w ww1 w2 w3 w4 }) -}
-2723766a50e673a0fd9e9fff96e3b6b6
+902199ffda3b212f61ea71c35553aa0d
   jqFilterParser2 ::
     Data.Attoparsec.Text.Internal.Parser GHC.Types.Char
   {- Unfolding: (Data.Hjq.Parser.schar
                    Data.Hjq.Parser.jqFilterParser3) -}
-aa91e584554315e7fbbf8d4259e05423
+c18a5193b2283a7a1d96816fae53560e
   jqFilterParser3 :: GHC.Types.Char
   {- HasNoCafRefs, Unfolding: (GHC.Types.C# '.'#) -}
-7932213f691c20eca180ed4dcc89d502
+66e613cfb424325f144c6981ce70d8d3
   jqQueryParser ::
     Data.Attoparsec.Text.Internal.Parser Data.Hjq.Parser.JqQuery
   {- Arity: 5,
@@ -1093,7 +1093,7 @@ aa91e584554315e7fbbf8d4259e05423
                   `cast`
                 (Sym (Data.Attoparsec.Internal.Types.N:Parser[0]
                           <Data.Text.Internal.Text>_N <Data.Hjq.Parser.JqQuery>_R)) -}
-1b2e0b43e417f274c0fe2a865b0fcd01
+98a5c6faf389d1e5d3c62c6b0c7f3b6b
   jqQueryParser1 ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> Data.Attoparsec.Internal.Types.Pos
@@ -1129,7 +1129,7 @@ aa91e584554315e7fbbf8d4259e05423
                         `cast`
                       (Data.Attoparsec.Internal.Types.N:Pos[0]) of ww { GHC.Types.I# ww1 ->
                  Data.Hjq.Parser.$wjqQueryParser @ r w ww1 w2 w3 w4 }) -}
-fbd143171abda69cd2837deee950fcd6
+0aa9e36639610fa74a140f698c50dc38
   parseJqQuery ::
     Data.Text.Internal.Text
     -> Data.Either.Either
@@ -1257,20 +1257,20 @@ fbd143171abda69cd2837deee950fcd6
                         @ Data.Text.Internal.Text
                         @ Data.Hjq.Parser.JqQuery
                         r1 }) -}
-df4da6f27a1d548dec6cf409fc7614b6
+d695377f3287be4eac1fee6480925b59
   parseJqQuery1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
                    Data.Attoparsec.Internal.Types.$fShowIResult3
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-377e1fc76c9caef28f706c046c70a92c
+6925746309311b655d92cadca718db09
   parseJqQuery2 :: [GHC.Types.Char]
   {- HasNoCafRefs,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Char
                    GHC.Show.shows6
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-d4f25b08e5ce0c5a6cdd97370e820b52
+e2c4caec124272e695c2dc7b96c8d3c7
   parseJqQuery3 ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> Data.Attoparsec.Internal.Types.Pos
@@ -1327,7 +1327,7 @@ d4f25b08e5ce0c5a6cdd97370e820b52
                          (GHC.Prim.+# dt1 ipv3)
                          (GHC.Prim.-# dt2 ipv3) })
                       a1 }) } }) -}
-bb4fbaaa94a79377915fd61ea009fdcd
+b6c9d1db86f8e69aa0d707e2970aae54
   parserJqFilter ::
     Data.Text.Internal.Text
     -> Data.Either.Either
@@ -1455,7 +1455,7 @@ bb4fbaaa94a79377915fd61ea009fdcd
                         @ Data.Text.Internal.Text
                         @ Data.Hjq.Parser.JqFilter
                         r1 }) -}
-c7d4e431f7cbb5565766f9096ddb2dbd
+12f62a1bf88ebf015eb1c9b8ef3b99f0
   parserJqFilter1 ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> Data.Attoparsec.Internal.Types.Pos
@@ -1512,12 +1512,12 @@ c7d4e431f7cbb5565766f9096ddb2dbd
                          (GHC.Prim.+# dt1 ipv3)
                          (GHC.Prim.-# dt2 ipv3) })
                       a1 }) } }) -}
-9b18137a13fcbd1d537b660a42e1f9d7
+51e8a3533dd1f937cbf7a9bf66cc460f
   schar ::
     GHC.Types.Char
     -> Data.Attoparsec.Text.Internal.Parser GHC.Types.Char
   {- Arity: 1, Strictness: <L,U(U)> -}
-1aba67d6d8b973e4a00103caabed678c
+5533517bc95041c9bdec9965d537aa23
   showParseResult ::
     GHC.Show.Show a =>
     Data.Attoparsec.Text.Internal.Result a
@@ -1528,7 +1528,7 @@ c7d4e431f7cbb5565766f9096ddb2dbd
                    (w :: GHC.Show.Show a)
                    (w1 :: Data.Attoparsec.Text.Internal.Result a) ->
                  Data.Hjq.Parser.$wshowParseResult @ a w1) -}
-6072634a0f1c769a494d202c565e84bd
+af8cef84e89c94b32a208e190da33e6c
   word ::
     Data.Attoparsec.Text.Internal.Parser Data.Text.Internal.Text
   {- Arity: 5,
@@ -1538,7 +1538,7 @@ c7d4e431f7cbb5565766f9096ddb2dbd
                   `cast`
                 (Sym (Data.Attoparsec.Internal.Types.N:Parser[0]
                           <Data.Text.Internal.Text>_N <Data.Text.Internal.Text>_R)) -}
-3ab179bf2f8fe9087bdf9b37b1509a15
+bb754d41952c535560232722ec024ef5
   word1 ::
     Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
     -> Data.Attoparsec.Internal.Types.Pos
