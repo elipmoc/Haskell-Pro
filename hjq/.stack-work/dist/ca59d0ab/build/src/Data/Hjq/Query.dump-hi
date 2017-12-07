@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-06 10:29:49.4944878 UTC
+2017-12-07 14:46:31.3986803 UTC
 
 interface hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ:Data.Hjq.Query 8002
-  interface hash: 50d03a65442919c598e11d7d4fbcf385
-  ABI hash: 5ca633a0eaf695243f3ac89e131bef08
-  export-list hash: c4c3782ee4a0c2002eddb9a58a6ce574
+  interface hash: 2eb7b9dd8109ffa59760a2eb658c8068
+  ABI hash: 3938a649a5034bae7c3929faaf87699d
+  export-list hash: fc8f638d887a7b03df614bb3432db9b5
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 0c31806435e24569de867b299395d905
   sig of: Nothing
@@ -13,6 +13,7 @@ interface hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ:Data.Hjq.Query 8002
   where
 exports:
   Data.Hjq.Query.applyFilter
+  Data.Hjq.Query.executeQuery
   Data.Hjq.Query.noteNotFoundError
   Data.Hjq.Query.noteOutOfRangeError
   Data.Hjq.Query.tshow
@@ -147,6 +148,7 @@ import  -/  base-4.9.1.0:Control.Monad f915f187cea611986ebb12dbc69279ab
 import  -/  base-4.9.1.0:Data.Either 186ef9adf6b47e24f39efe9b2e18e352
 import  -/  base-4.9.1.0:Data.Monoid 57d0116342e60080b20e7d5f9e1248f9
 import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Err 20faef8829fd13c027d0ee2213637534
 import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  Data.Hjq.Parser 543bcd70f4a83971496feb0a88d92cdd
@@ -155,6 +157,7 @@ import  -/  Data.Hjq.Parser 543bcd70f4a83971496feb0a88d92cdd
   JqFilter 91ed5df3c5d0d5dd05c8b59fadb00e80
   JqIndex 5a032276f630838149de64c233261d03
   JqNil 3acaa3ca6b2bd93a69769730267bdaca
+  JqQuery b0c894d025d6aa861884faff438c25ec
 import  -/  lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens 51c282815697462fb4c0814abcb89573
 import  -/  lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens.Fold 85b72028b5edba38936404deb33bd848
 import  -/  lens-aeson-1.0.2@lens-aeson-1.0.2-43qoalhLTu915Xc2si0fma:Data.Aeson.Lens b8384305855d57f93f92a431497fbcef
@@ -252,6 +255,22 @@ aba0addc4415c7cc4bf04a5a45baac82
     -> Data.Either.Either
          Data.Text.Internal.Text Data.Aeson.Types.Internal.Value
   {- Arity: 2, Strictness: <S,U><L,U> -}
+986a917310d70b10c703a159d8437051
+  executeQuery ::
+    Data.Hjq.Parser.JqQuery
+    -> Data.Aeson.Types.Internal.Value
+    -> Data.Either.Either
+         Data.Text.Internal.Text Data.Aeson.Types.Internal.Value
+  {- Arity: 2, Strictness: <B,A><B,A>x,
+     Unfolding: InlineRule (2, True, True)
+                (\ (t :: Data.Hjq.Parser.JqQuery)
+                   (s :: Data.Aeson.Types.Internal.Value) ->
+                 Data.Hjq.Query.executeQuery1) -}
+c7cf1ac5f4465377407fcc3aafb0c772
+  executeQuery1 ::
+    Data.Either.Either
+      Data.Text.Internal.Text Data.Aeson.Types.Internal.Value
+  {- Strictness: x -}
 ef08494cfa63f4ce285ce3f5201f0bc0
   noteNotFoundError ::
     Data.Text.Internal.Text

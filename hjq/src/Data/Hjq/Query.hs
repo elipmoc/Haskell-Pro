@@ -31,6 +31,9 @@ noteOutOfRangeError :: Int -> Maybe a -> Either T.Text a
 noteOutOfRangeError _ (Just x)= Right x
 noteOutOfRangeError s Nothing= Left $ "out of range : " <> tshow s
 
+--クエリ実行
+executeQuery :: JqQuery -> Value -> Either T.Text Value
+executeQuery t s=undefined
 
 --Show型クラスのインスタンスをText型に変換
 tshow :: Show a => a-> T.Text
