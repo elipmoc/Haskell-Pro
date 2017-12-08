@@ -121,7 +121,9 @@ applyFilterTest = TestList
     ]
 
 unsafeParseQuery :: Text -> JqQuery
-unsafeParseQuery t =undefined
+unsafeParseQuery t =case parseJqQuery t of
+    Right q -> q
+    Left s -> error $ "PARSE FAILURE IN A TEST : " ++ unpack s
 
 --クエリ実行のテスト
 executeQueryTest :: Test

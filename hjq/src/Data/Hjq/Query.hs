@@ -2,6 +2,8 @@
 module Data.Hjq.Query where
 
 import Data.Text as T
+import qualified Data.Vector as V
+import qualified Data.HashMap.Strict as H
 import Data.Hjq.Parser
 import Data.Aeson
 import Data.Aeson.Lens
@@ -33,7 +35,13 @@ noteOutOfRangeError s Nothing= Left $ "out of range : " <> tshow s
 
 --クエリ実行
 executeQuery :: JqQuery -> Value -> Either T.Text Value
-executeQuery t s=undefined
+executeQuery (JqQueryObject o) v =
+    fmap (Object . H.fromList) . sequence .fmap sequence $ fmap (fmap $ flip executeQuery v) o
+
+executeQuery (JqQueryArray l) v =
+    fmap (Array . V.fromList) . sequence $ fmap (flip executeQuery v) l
+
+executeQuery (JqQueryFilter f) v = applyFilter f v
 
 --Show型クラスのインスタンスをText型に変換
 tshow :: Show a => a-> T.Text
