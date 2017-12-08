@@ -35,6 +35,13 @@
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 1)
 
+/* package bytestring-0.10.8.1 */
+#define VERSION_bytestring "0.10.8.1"
+#define MIN_VERSION_bytestring(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  10 || \
+  (major1) == 0 && (major2) == 10 && (minor) <= 8)
+
 /* package errors-2.2.2 */
 #define VERSION_errors "2.2.2"
 #define MIN_VERSION_errors(major1,major2,minor) (\
@@ -154,7 +161,7 @@
   (major1) == 2 && (major2) <  25 || \
   (major1) == 2 && (major2) == 25 && (minor) <= 0)
 
-#define CURRENT_COMPONENT_ID "hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ"
+#define CURRENT_COMPONENT_ID "hjq-0.1.0.0-DcMovAigvgV1e3gGkdp8w3"
 
-#define CURRENT_PACKAGE_KEY "hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ"
+#define CURRENT_PACKAGE_KEY "hjq-0.1.0.0-DcMovAigvgV1e3gGkdp8w3"
 

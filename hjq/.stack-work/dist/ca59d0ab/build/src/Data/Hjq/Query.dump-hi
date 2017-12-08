@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-08 04:23:25.8074701 UTC
+2017-12-08 05:06:54.8235032 UTC
 
-interface hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ:Data.Hjq.Query 8002
-  interface hash: 4ebf4bd5b747869daffda9de09000f55
-  ABI hash: e6ba08fb906fcc33b7363cabe3057158
-  export-list hash: fc8f638d887a7b03df614bb3432db9b5
+interface hjq-0.1.0.0-DcMovAigvgV1e3gGkdp8w3:Data.Hjq.Query 8002
+  interface hash: 89604b32cdfe035a403a7d86761654c6
+  ABI hash: 7a4f6d37565a93ed490357ac5c62d306
+  export-list hash: 92c123f8b3104b5da5bbb94b8fb2d6d8
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 0c31806435e24569de867b299395d905
   sig of: Nothing
@@ -151,16 +151,16 @@ import  -/  base-4.9.1.0:Data.Traversable 078621b399ac9374b02f3f2ce55a08e9
 import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
 import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
-import  -/  Data.Hjq.Parser 543bcd70f4a83971496feb0a88d92cdd
-  exports: a32aaa67aad4ec06867b3196813d626e
-  JqField 93eeccdfc68da86bb60d2fc808020bd3
-  JqFilter 91ed5df3c5d0d5dd05c8b59fadb00e80
-  JqIndex 5a032276f630838149de64c233261d03
-  JqNil 3acaa3ca6b2bd93a69769730267bdaca
-  JqQuery b0c894d025d6aa861884faff438c25ec
-  JqQueryArray 9cd4ad2b6ac82b0578bf5900505629f0
-  JqQueryFilter cde24367d758d4b737f5e7b2a4953210
-  JqQueryObject ae219b17d7ee4bba25f5591f1d386dcd
+import  -/  Data.Hjq.Parser 3d8b831c2b7a0c0adfa5588c49c4029c
+  exports: 583a8c59ee11bf4188c29781bd3e05f1
+  JqField 20a947124da7cc8a83bc52f0b45a21a0
+  JqFilter d241f2fbf5c7582e016c3449a141b6c9
+  JqIndex ac481daa5be169d7967fec00a7ad2101
+  JqNil a463a9745114759ab0de0646cf730d3e
+  JqQuery 67464de3583ccdbf4adfffbbc9219d01
+  JqQueryArray e6c4517f5231e0f0757b3f0462c3e62e
+  JqQueryFilter d0bc50238411302a7f9852ba5463ae88
+  JqQueryObject 091e4defbe93075b4cfa51b199bed663
 import  -/  lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens 51c282815697462fb4c0814abcb89573
 import  -/  lens-4.15.4@lens-4.15.4-Km66e7WFRbEC7HnDdV2JDW:Control.Lens.Fold 85b72028b5edba38936404deb33bd848
 import  -/  lens-aeson-1.0.2@lens-aeson-1.0.2-43qoalhLTu915Xc2si0fma:Data.Aeson.Lens b8384305855d57f93f92a431497fbcef
@@ -168,22 +168,22 @@ import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text 60ee6e221
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 95940720afdbe18ada37ea3a0ad8c1a0
 import  -/  unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Strict d885b1d9a1e033a14f7012d569830271
 import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector 1403384d2f6b40dd8aab4268ede0dcdf
-c3c273d2b8efade7b1b2335c82561f0c
+8b512c60a97c0ad617559296d3a9f0e9
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Data.Hjq.Query.$trModule2
                    Data.Hjq.Query.$trModule1) -}
-705b01b73fb8567e78c20383a14a6eca
+ac38526b30e95a2036bcbe91045621dd
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Data.Hjq.Query"#) -}
-11a08d4a22c7befd4918af923bb3b812
+5c0277faee8c9dd5fa57bf43e1ffcdda
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "hjq-0.1.0.0-LRLqA3DxDyN3IXZOx6e6qQ"#) -}
-e057b5af22f1ea3f28921cea1ce7c003
+                   "hjq-0.1.0.0-DcMovAigvgV1e3gGkdp8w3"#) -}
+db7b3d846e38ae222ff87a6bbf7c7f75
   $w$s$wupdateOrSnocWithKey ::
     (Data.Text.Internal.Text -> v -> v -> v)
     -> GHC.Prim.ByteArray#
@@ -330,7 +330,7 @@ e057b5af22f1ea3f28921cea1ce7c003
                    (GHC.Prim.sizeofArray#
                       @ (Data.HashMap.Base.Leaf Data.Text.Internal.Text v)
                       w2)) -}
-7203db4623e523f9d2c65c44bf7de949
+c7bc24963a9f1703eee9b23441b774ee
   $w$slookup ::
     GHC.Prim.ByteArray#
     -> GHC.Prim.Int#
@@ -366,7 +366,7 @@ e057b5af22f1ea3f28921cea1ce7c003
                    ww2
                    0#
                    w }) -}
-7f11006d9c7ee41d953af3d26d40e3a5
+668aeca9562e4a6e2c5bacd5302fc67e
   $w$sunsafeInsert ::
     GHC.Prim.ByteArray#
     -> GHC.Prim.Int#
@@ -407,7 +407,7 @@ e057b5af22f1ea3f28921cea1ce7c003
                         w1
                         GHC.Prim.realWorld# of ds { (#,#) ipv ipv1 ->
                  ipv1 } }) -}
-f0215e0cdb67c8f0ec55d5a951d4638c
+94292db73a9ef43765b33e1235ffe990
   $wouter3 ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
@@ -418,7 +418,7 @@ f0215e0cdb67c8f0ec55d5a951d4638c
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-adc3a81fc4fd2d0cfeecf845d33d0d4b
+f6cefc3d910cf040813c5b8674ea826e
   $wpoly_go1 ::
     GHC.Prim.ByteArray#
     -> GHC.Prim.Int#
@@ -430,7 +430,7 @@ adc3a81fc4fd2d0cfeecf845d33d0d4b
     -> GHC.Base.Maybe v
   {- Arity: 6, HasNoCafRefs,
      Strictness: <L,U><L,U><L,U><S,U><S,U><S,U>, Inline: [0] -}
-aba0addc4415c7cc4bf04a5a45baac82
+b28dba7e75a5b3b7df6196e38d63927b
   $wpoly_go3 ::
     GHC.Prim.Word#
     -> GHC.Prim.ByteArray#
@@ -441,7 +441,7 @@ aba0addc4415c7cc4bf04a5a45baac82
     -> GHC.Base.Maybe v
   {- Arity: 6, HasNoCafRefs,
      Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U>, Inline: [0] -}
-416e1de956a8c3476d8d7cb2ca05c136
+2e4bc2785e3170b2d0629b18f9527483
   $wpoly_go4 ::
     GHC.Prim.Word#
     -> GHC.Prim.ByteArray#
@@ -456,21 +456,21 @@ aba0addc4415c7cc4bf04a5a45baac82
   {- Arity: 8,
      Strictness: <L,U><L,U><L,U><L,U><L,U><L,U><S,1*U><L,U>,
      Inline: [0] -}
-06cb3fd229ed24277025b7e2a505c616
+31ea716e932f4177b3582168c9e34169
   applyFilter ::
     Data.Hjq.Parser.JqFilter
     -> Data.Aeson.Types.Internal.Value
     -> Data.Either.Either
          Data.Text.Internal.Text Data.Aeson.Types.Internal.Value
   {- Arity: 2, Strictness: <S,U><L,U> -}
-0d3ec379b627af307af76c0e3b4e2507
+0c4bbf43ce71543c1ad30369ffeb2426
   executeQuery ::
     Data.Hjq.Parser.JqQuery
     -> Data.Aeson.Types.Internal.Value
     -> Data.Either.Either
          Data.Text.Internal.Text Data.Aeson.Types.Internal.Value
   {- Arity: 2, Strictness: <S,1*U><L,U> -}
-ef08494cfa63f4ce285ce3f5201f0bc0
+69309a74ada2e52e648afde6cfe16ac2
   noteNotFoundError ::
     Data.Text.Internal.Text
     -> GHC.Base.Maybe a -> Data.Either.Either Data.Text.Internal.Text a
@@ -489,16 +489,16 @@ ef08494cfa63f4ce285ce3f5201f0bc0
                               (Data.Text.Internal.Fusion.stream ds)))
                    GHC.Base.Just x
                    -> Data.Either.Right @ Data.Text.Internal.Text @ a x }) -}
-522cab5f3ea9c4081ff2af7aaff053af
+e759db1f9de1504259cd3ab37cb14cca
   noteNotFoundError1 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "field name not found"#) -}
-0d969e8d37226f34d0a22d1e97e7fa3d
+6b146112f2c8f4ded3adf69c3baf4502
   noteOutOfRangeError ::
     GHC.Types.Int
     -> GHC.Base.Maybe a -> Data.Either.Either Data.Text.Internal.Text a
   {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
-a841d3a60039912487586808d6f1c0dd
+81be369a9d9331f067e65b9c4f145861
   tshow :: GHC.Show.Show a => a -> Data.Text.Internal.Text
   {- Arity: 2, Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,U>,
      Unfolding: (\ @ a ($dShow :: GHC.Show.Show a) (eta :: a) ->
